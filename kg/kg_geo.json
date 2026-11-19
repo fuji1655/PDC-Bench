@@ -1,0 +1,1762 @@
+{
+ "NORTH_AMERICA": {
+  "surface": "North America",
+  "level": "continent",
+  "aliases": [],
+  "ancestors": [],
+  "siblings": [
+   "ASIA",
+   "EUROPE"
+  ]
+ },
+ "UNITED_STATES": {
+  "surface": "United States",
+  "level": "country",
+  "aliases": [],
+  "ancestors": [
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "CANADA",
+   "MEXICO"
+  ]
+ },
+ "CALIFORNIA": {
+  "surface": "California",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "UNITED_STATES",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "NEW_YORK",
+   "MASSACHUSETTS",
+   "GEORGIA",
+   "FLORIDA",
+   "TEXAS",
+   "ILLINOIS",
+   "WASHINGTON"
+  ]
+ },
+ "LOS_ANGELES": {
+  "surface": "Los Angeles",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "CALIFORNIA",
+   "UNITED_STATES",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "SAN_FRANCISCO"
+  ]
+ },
+ "SAN_FRANCISCO": {
+  "surface": "San Francisco",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "CALIFORNIA",
+   "UNITED_STATES",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "LOS_ANGELES"
+  ]
+ },
+ "NEW_YORK": {
+  "surface": "New York",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "UNITED_STATES",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "CALIFORNIA",
+   "MASSACHUSETTS",
+   "GEORGIA",
+   "FLORIDA",
+   "TEXAS",
+   "ILLINOIS",
+   "WASHINGTON"
+  ]
+ },
+ "NEW_YORK_CITY": {
+  "surface": "New York City",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "NEW_YORK",
+   "UNITED_STATES",
+   "NORTH_AMERICA"
+  ],
+  "siblings": []
+ },
+ "MASSACHUSETTS": {
+  "surface": "Massachusetts",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "UNITED_STATES",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "CALIFORNIA",
+   "NEW_YORK",
+   "GEORGIA",
+   "FLORIDA",
+   "TEXAS",
+   "ILLINOIS",
+   "WASHINGTON"
+  ]
+ },
+ "BOSTON": {
+  "surface": "Boston",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "MASSACHUSETTS",
+   "UNITED_STATES",
+   "NORTH_AMERICA"
+  ],
+  "siblings": []
+ },
+ "GEORGIA": {
+  "surface": "Georgia",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "UNITED_STATES",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "CALIFORNIA",
+   "NEW_YORK",
+   "MASSACHUSETTS",
+   "FLORIDA",
+   "TEXAS",
+   "ILLINOIS",
+   "WASHINGTON"
+  ]
+ },
+ "ATLANTA": {
+  "surface": "Atlanta",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "GEORGIA",
+   "UNITED_STATES",
+   "NORTH_AMERICA"
+  ],
+  "siblings": []
+ },
+ "FLORIDA": {
+  "surface": "Florida",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "UNITED_STATES",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "CALIFORNIA",
+   "NEW_YORK",
+   "MASSACHUSETTS",
+   "GEORGIA",
+   "TEXAS",
+   "ILLINOIS",
+   "WASHINGTON"
+  ]
+ },
+ "MIAMI": {
+  "surface": "Miami",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "FLORIDA",
+   "UNITED_STATES",
+   "NORTH_AMERICA"
+  ],
+  "siblings": []
+ },
+ "TEXAS": {
+  "surface": "Texas",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "UNITED_STATES",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "CALIFORNIA",
+   "NEW_YORK",
+   "MASSACHUSETTS",
+   "GEORGIA",
+   "FLORIDA",
+   "ILLINOIS",
+   "WASHINGTON"
+  ]
+ },
+ "HOUSTON": {
+  "surface": "Houston",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "TEXAS",
+   "UNITED_STATES",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "DALLAS"
+  ]
+ },
+ "DALLAS": {
+  "surface": "Dallas",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "TEXAS",
+   "UNITED_STATES",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "HOUSTON"
+  ]
+ },
+ "ILLINOIS": {
+  "surface": "Illinois",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "UNITED_STATES",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "CALIFORNIA",
+   "NEW_YORK",
+   "MASSACHUSETTS",
+   "GEORGIA",
+   "FLORIDA",
+   "TEXAS",
+   "WASHINGTON"
+  ]
+ },
+ "CHICAGO": {
+  "surface": "Chicago",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "ILLINOIS",
+   "UNITED_STATES",
+   "NORTH_AMERICA"
+  ],
+  "siblings": []
+ },
+ "WASHINGTON": {
+  "surface": "Washington",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "UNITED_STATES",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "CALIFORNIA",
+   "NEW_YORK",
+   "MASSACHUSETTS",
+   "GEORGIA",
+   "FLORIDA",
+   "TEXAS",
+   "ILLINOIS"
+  ]
+ },
+ "SEATTLE": {
+  "surface": "Seattle",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "WASHINGTON",
+   "UNITED_STATES",
+   "NORTH_AMERICA"
+  ],
+  "siblings": []
+ },
+ "CANADA": {
+  "surface": "Canada",
+  "level": "country",
+  "aliases": [],
+  "ancestors": [
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "UNITED_STATES",
+   "MEXICO"
+  ]
+ },
+ "ONTARIO": {
+  "surface": "Ontario",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "CANADA",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "QUEBEC",
+   "BRITISH_COLUMBIA"
+  ]
+ },
+ "TORONTO": {
+  "surface": "Toronto",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "ONTARIO",
+   "CANADA",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "OTTAWA"
+  ]
+ },
+ "OTTAWA": {
+  "surface": "Ottawa",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "ONTARIO",
+   "CANADA",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "TORONTO"
+  ]
+ },
+ "QUEBEC": {
+  "surface": "Quebec",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "CANADA",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "ONTARIO",
+   "BRITISH_COLUMBIA"
+  ]
+ },
+ "MONTREAL": {
+  "surface": "Montreal",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "QUEBEC",
+   "CANADA",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "LAVAL"
+  ]
+ },
+ "LAVAL": {
+  "surface": "Laval",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "QUEBEC",
+   "CANADA",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "MONTREAL"
+  ]
+ },
+ "BRITISH_COLUMBIA": {
+  "surface": "British Columbia",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "CANADA",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "ONTARIO",
+   "QUEBEC"
+  ]
+ },
+ "VANCOUVER": {
+  "surface": "Vancouver",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "BRITISH_COLUMBIA",
+   "CANADA",
+   "NORTH_AMERICA"
+  ],
+  "siblings": []
+ },
+ "MEXICO": {
+  "surface": "Mexico",
+  "level": "country",
+  "aliases": [],
+  "ancestors": [
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "UNITED_STATES",
+   "CANADA"
+  ]
+ },
+ "ESTADO_DE_MEXICO": {
+  "surface": "Estado de Mexico",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "MEXICO",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "JALISCO",
+   "NUEVO_LEON"
+  ]
+ },
+ "TOLUCA": {
+  "surface": "Toluca",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "ESTADO_DE_MEXICO",
+   "MEXICO",
+   "NORTH_AMERICA"
+  ],
+  "siblings": []
+ },
+ "JALISCO": {
+  "surface": "Jalisco",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "MEXICO",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "ESTADO_DE_MEXICO",
+   "NUEVO_LEON"
+  ]
+ },
+ "GUADALAJARA": {
+  "surface": "Guadalajara",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "JALISCO",
+   "MEXICO",
+   "NORTH_AMERICA"
+  ],
+  "siblings": []
+ },
+ "NUEVO_LEON": {
+  "surface": "Nuevo Leon",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "MEXICO",
+   "NORTH_AMERICA"
+  ],
+  "siblings": [
+   "ESTADO_DE_MEXICO",
+   "JALISCO"
+  ]
+ },
+ "MONTERREY": {
+  "surface": "Monterrey",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "NUEVO_LEON",
+   "MEXICO",
+   "NORTH_AMERICA"
+  ],
+  "siblings": []
+ },
+ "ASIA": {
+  "surface": "Asia",
+  "level": "continent",
+  "aliases": [],
+  "ancestors": [],
+  "siblings": [
+   "NORTH_AMERICA",
+   "EUROPE"
+  ]
+ },
+ "JAPAN": {
+  "surface": "Japan",
+  "level": "country",
+  "aliases": [],
+  "ancestors": [
+   "ASIA"
+  ],
+  "siblings": [
+   "CHINA",
+   "SOUTH_KOREA"
+  ]
+ },
+ "TOKYO_METROPOLIS": {
+  "surface": "Tokyo Metropolis",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "JAPAN",
+   "ASIA"
+  ],
+  "siblings": [
+   "KANAGAWA",
+   "OSAKA_PREFECTURE",
+   "KYOTO_PREFECTURE",
+   "HYOGO",
+   "AICHI",
+   "HOKKAIDO"
+  ]
+ },
+ "SHIBUYA": {
+  "surface": "Shibuya",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "TOKYO_METROPOLIS",
+   "JAPAN",
+   "ASIA"
+  ],
+  "siblings": [
+   "SHINJUKU"
+  ]
+ },
+ "SHINJUKU": {
+  "surface": "Shinjuku",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "TOKYO_METROPOLIS",
+   "JAPAN",
+   "ASIA"
+  ],
+  "siblings": [
+   "SHIBUYA"
+  ]
+ },
+ "KANAGAWA": {
+  "surface": "Kanagawa",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "JAPAN",
+   "ASIA"
+  ],
+  "siblings": [
+   "TOKYO_METROPOLIS",
+   "OSAKA_PREFECTURE",
+   "KYOTO_PREFECTURE",
+   "HYOGO",
+   "AICHI",
+   "HOKKAIDO"
+  ]
+ },
+ "YOKOHAMA": {
+  "surface": "Yokohama",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "KANAGAWA",
+   "JAPAN",
+   "ASIA"
+  ],
+  "siblings": []
+ },
+ "OSAKA_PREFECTURE": {
+  "surface": "Osaka Prefecture",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "JAPAN",
+   "ASIA"
+  ],
+  "siblings": [
+   "TOKYO_METROPOLIS",
+   "KANAGAWA",
+   "KYOTO_PREFECTURE",
+   "HYOGO",
+   "AICHI",
+   "HOKKAIDO"
+  ]
+ },
+ "SAKAI": {
+  "surface": "Sakai",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "OSAKA_PREFECTURE",
+   "JAPAN",
+   "ASIA"
+  ],
+  "siblings": [
+   "TOYONAKA"
+  ]
+ },
+ "TOYONAKA": {
+  "surface": "Toyonaka",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "OSAKA_PREFECTURE",
+   "JAPAN",
+   "ASIA"
+  ],
+  "siblings": [
+   "SAKAI"
+  ]
+ },
+ "KYOTO_PREFECTURE": {
+  "surface": "Kyoto Prefecture",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "JAPAN",
+   "ASIA"
+  ],
+  "siblings": [
+   "TOKYO_METROPOLIS",
+   "KANAGAWA",
+   "OSAKA_PREFECTURE",
+   "HYOGO",
+   "AICHI",
+   "HOKKAIDO"
+  ]
+ },
+ "UJI": {
+  "surface": "Uji",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "KYOTO_PREFECTURE",
+   "JAPAN",
+   "ASIA"
+  ],
+  "siblings": [
+   "MAIZURU"
+  ]
+ },
+ "MAIZURU": {
+  "surface": "Maizuru",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "KYOTO_PREFECTURE",
+   "JAPAN",
+   "ASIA"
+  ],
+  "siblings": [
+   "UJI"
+  ]
+ },
+ "HYOGO": {
+  "surface": "Hyogo",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "JAPAN",
+   "ASIA"
+  ],
+  "siblings": [
+   "TOKYO_METROPOLIS",
+   "KANAGAWA",
+   "OSAKA_PREFECTURE",
+   "KYOTO_PREFECTURE",
+   "AICHI",
+   "HOKKAIDO"
+  ]
+ },
+ "KOBE": {
+  "surface": "Kobe",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "HYOGO",
+   "JAPAN",
+   "ASIA"
+  ],
+  "siblings": []
+ },
+ "AICHI": {
+  "surface": "Aichi",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "JAPAN",
+   "ASIA"
+  ],
+  "siblings": [
+   "TOKYO_METROPOLIS",
+   "KANAGAWA",
+   "OSAKA_PREFECTURE",
+   "KYOTO_PREFECTURE",
+   "HYOGO",
+   "HOKKAIDO"
+  ]
+ },
+ "NAGOYA": {
+  "surface": "Nagoya",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "AICHI",
+   "JAPAN",
+   "ASIA"
+  ],
+  "siblings": []
+ },
+ "HOKKAIDO": {
+  "surface": "Hokkaido",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "JAPAN",
+   "ASIA"
+  ],
+  "siblings": [
+   "TOKYO_METROPOLIS",
+   "KANAGAWA",
+   "OSAKA_PREFECTURE",
+   "KYOTO_PREFECTURE",
+   "HYOGO",
+   "AICHI"
+  ]
+ },
+ "SAPPORO": {
+  "surface": "Sapporo",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "HOKKAIDO",
+   "JAPAN",
+   "ASIA"
+  ],
+  "siblings": []
+ },
+ "CHINA": {
+  "surface": "China",
+  "level": "country",
+  "aliases": [],
+  "ancestors": [
+   "ASIA"
+  ],
+  "siblings": [
+   "JAPAN",
+   "SOUTH_KOREA"
+  ]
+ },
+ "LIAONING": {
+  "surface": "Liaoning",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "CHINA",
+   "ASIA"
+  ],
+  "siblings": [
+   "ZHEJIANG",
+   "JIANGSU",
+   "GUANGDONG",
+   "HUBEI",
+   "SICHUAN",
+   "YUNNAN",
+   "SHAANXI"
+  ]
+ },
+ "DALIAN": {
+  "surface": "Dalian",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "LIAONING",
+   "CHINA",
+   "ASIA"
+  ],
+  "siblings": []
+ },
+ "ZHEJIANG": {
+  "surface": "Zhejiang",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "CHINA",
+   "ASIA"
+  ],
+  "siblings": [
+   "LIAONING",
+   "JIANGSU",
+   "GUANGDONG",
+   "HUBEI",
+   "SICHUAN",
+   "YUNNAN",
+   "SHAANXI"
+  ]
+ },
+ "HANGZHOU": {
+  "surface": "Hangzhou",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "ZHEJIANG",
+   "CHINA",
+   "ASIA"
+  ],
+  "siblings": []
+ },
+ "JIANGSU": {
+  "surface": "Jiangsu",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "CHINA",
+   "ASIA"
+  ],
+  "siblings": [
+   "LIAONING",
+   "ZHEJIANG",
+   "GUANGDONG",
+   "HUBEI",
+   "SICHUAN",
+   "YUNNAN",
+   "SHAANXI"
+  ]
+ },
+ "SUZHOU": {
+  "surface": "Suzhou",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "JIANGSU",
+   "CHINA",
+   "ASIA"
+  ],
+  "siblings": [
+   "NANJING"
+  ]
+ },
+ "NANJING": {
+  "surface": "Nanjing",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "JIANGSU",
+   "CHINA",
+   "ASIA"
+  ],
+  "siblings": [
+   "SUZHOU"
+  ]
+ },
+ "GUANGDONG": {
+  "surface": "Guangdong",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "CHINA",
+   "ASIA"
+  ],
+  "siblings": [
+   "LIAONING",
+   "ZHEJIANG",
+   "JIANGSU",
+   "HUBEI",
+   "SICHUAN",
+   "YUNNAN",
+   "SHAANXI"
+  ]
+ },
+ "GUANGZHOU": {
+  "surface": "Guangzhou",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "GUANGDONG",
+   "CHINA",
+   "ASIA"
+  ],
+  "siblings": [
+   "SHENZHEN"
+  ]
+ },
+ "SHENZHEN": {
+  "surface": "Shenzhen",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "GUANGDONG",
+   "CHINA",
+   "ASIA"
+  ],
+  "siblings": [
+   "GUANGZHOU"
+  ]
+ },
+ "HUBEI": {
+  "surface": "Hubei",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "CHINA",
+   "ASIA"
+  ],
+  "siblings": [
+   "LIAONING",
+   "ZHEJIANG",
+   "JIANGSU",
+   "GUANGDONG",
+   "SICHUAN",
+   "YUNNAN",
+   "SHAANXI"
+  ]
+ },
+ "WUHAN": {
+  "surface": "Wuhan",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "HUBEI",
+   "CHINA",
+   "ASIA"
+  ],
+  "siblings": []
+ },
+ "SICHUAN": {
+  "surface": "Sichuan",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "CHINA",
+   "ASIA"
+  ],
+  "siblings": [
+   "LIAONING",
+   "ZHEJIANG",
+   "JIANGSU",
+   "GUANGDONG",
+   "HUBEI",
+   "YUNNAN",
+   "SHAANXI"
+  ]
+ },
+ "CHENGDU": {
+  "surface": "Chengdu",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "SICHUAN",
+   "CHINA",
+   "ASIA"
+  ],
+  "siblings": []
+ },
+ "YUNNAN": {
+  "surface": "Yunnan",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "CHINA",
+   "ASIA"
+  ],
+  "siblings": [
+   "LIAONING",
+   "ZHEJIANG",
+   "JIANGSU",
+   "GUANGDONG",
+   "HUBEI",
+   "SICHUAN",
+   "SHAANXI"
+  ]
+ },
+ "KUNMING": {
+  "surface": "Kunming",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "YUNNAN",
+   "CHINA",
+   "ASIA"
+  ],
+  "siblings": []
+ },
+ "SHAANXI": {
+  "surface": "Shaanxi",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "CHINA",
+   "ASIA"
+  ],
+  "siblings": [
+   "LIAONING",
+   "ZHEJIANG",
+   "JIANGSU",
+   "GUANGDONG",
+   "HUBEI",
+   "SICHUAN",
+   "YUNNAN"
+  ]
+ },
+ "XI_AN": {
+  "surface": "Xi'an",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "SHAANXI",
+   "CHINA",
+   "ASIA"
+  ],
+  "siblings": []
+ },
+ "SOUTH_KOREA": {
+  "surface": "South Korea",
+  "level": "country",
+  "aliases": [],
+  "ancestors": [
+   "ASIA"
+  ],
+  "siblings": [
+   "JAPAN",
+   "CHINA"
+  ]
+ },
+ "GYEONGGI": {
+  "surface": "Gyeonggi",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "SOUTH_KOREA",
+   "ASIA"
+  ],
+  "siblings": [
+   "GANGWON",
+   "SOUTH_GYEONGSANG"
+  ]
+ },
+ "SUWON": {
+  "surface": "Suwon",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "GYEONGGI",
+   "SOUTH_KOREA",
+   "ASIA"
+  ],
+  "siblings": []
+ },
+ "GANGWON": {
+  "surface": "Gangwon",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "SOUTH_KOREA",
+   "ASIA"
+  ],
+  "siblings": [
+   "GYEONGGI",
+   "SOUTH_GYEONGSANG"
+  ]
+ },
+ "CHUNCHEON": {
+  "surface": "Chuncheon",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "GANGWON",
+   "SOUTH_KOREA",
+   "ASIA"
+  ],
+  "siblings": []
+ },
+ "SOUTH_GYEONGSANG": {
+  "surface": "South Gyeongsang",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "SOUTH_KOREA",
+   "ASIA"
+  ],
+  "siblings": [
+   "GYEONGGI",
+   "GANGWON"
+  ]
+ },
+ "CHANGWON": {
+  "surface": "Changwon",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "SOUTH_GYEONGSANG",
+   "SOUTH_KOREA",
+   "ASIA"
+  ],
+  "siblings": []
+ },
+ "EUROPE": {
+  "surface": "Europe",
+  "level": "continent",
+  "aliases": [],
+  "ancestors": [],
+  "siblings": [
+   "NORTH_AMERICA",
+   "ASIA"
+  ]
+ },
+ "SPAIN": {
+  "surface": "Spain",
+  "level": "country",
+  "aliases": [],
+  "ancestors": [
+   "EUROPE"
+  ],
+  "siblings": [
+   "ITALY",
+   "FRANCE"
+  ]
+ },
+ "CATALONIA": {
+  "surface": "Catalonia",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "SPAIN",
+   "EUROPE"
+  ],
+  "siblings": [
+   "COMMUNITY_OF_MADRID",
+   "ANDALUSIA",
+   "PAIS_VASCO",
+   "GALICIA",
+   "NAVARRE",
+   "CASTILE_AND_LEON",
+   "VALENCIAN_COMMUNITY"
+  ]
+ },
+ "BARCELONA": {
+  "surface": "Barcelona",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "CATALONIA",
+   "SPAIN",
+   "EUROPE"
+  ],
+  "siblings": []
+ },
+ "COMMUNITY_OF_MADRID": {
+  "surface": "Community of Madrid",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "SPAIN",
+   "EUROPE"
+  ],
+  "siblings": [
+   "CATALONIA",
+   "ANDALUSIA",
+   "PAIS_VASCO",
+   "GALICIA",
+   "NAVARRE",
+   "CASTILE_AND_LEON",
+   "VALENCIAN_COMMUNITY"
+  ]
+ },
+ "ALCALA_DE_HENARES": {
+  "surface": "Alcala de Henares",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "COMMUNITY_OF_MADRID",
+   "SPAIN",
+   "EUROPE"
+  ],
+  "siblings": []
+ },
+ "ANDALUSIA": {
+  "surface": "Andalusia",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "SPAIN",
+   "EUROPE"
+  ],
+  "siblings": [
+   "CATALONIA",
+   "COMMUNITY_OF_MADRID",
+   "PAIS_VASCO",
+   "GALICIA",
+   "NAVARRE",
+   "CASTILE_AND_LEON",
+   "VALENCIAN_COMMUNITY"
+  ]
+ },
+ "SEVILLE": {
+  "surface": "Seville",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "ANDALUSIA",
+   "SPAIN",
+   "EUROPE"
+  ],
+  "siblings": [
+   "MARBELLA"
+  ]
+ },
+ "MARBELLA": {
+  "surface": "Marbella",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "ANDALUSIA",
+   "SPAIN",
+   "EUROPE"
+  ],
+  "siblings": [
+   "SEVILLE"
+  ]
+ },
+ "PAIS_VASCO": {
+  "surface": "Pais Vasco",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "SPAIN",
+   "EUROPE"
+  ],
+  "siblings": [
+   "CATALONIA",
+   "COMMUNITY_OF_MADRID",
+   "ANDALUSIA",
+   "GALICIA",
+   "NAVARRE",
+   "CASTILE_AND_LEON",
+   "VALENCIAN_COMMUNITY"
+  ]
+ },
+ "BILBAO": {
+  "surface": "Bilbao",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "PAIS_VASCO",
+   "SPAIN",
+   "EUROPE"
+  ],
+  "siblings": [
+   "SAN_SEBASTIAN"
+  ]
+ },
+ "SAN_SEBASTIAN": {
+  "surface": "San Sebastian",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "PAIS_VASCO",
+   "SPAIN",
+   "EUROPE"
+  ],
+  "siblings": [
+   "BILBAO"
+  ]
+ },
+ "GALICIA": {
+  "surface": "Galicia",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "SPAIN",
+   "EUROPE"
+  ],
+  "siblings": [
+   "CATALONIA",
+   "COMMUNITY_OF_MADRID",
+   "ANDALUSIA",
+   "PAIS_VASCO",
+   "NAVARRE",
+   "CASTILE_AND_LEON",
+   "VALENCIAN_COMMUNITY"
+  ]
+ },
+ "SANTIAGO_DE_COMPOSTELA": {
+  "surface": "Santiago de Compostela",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "GALICIA",
+   "SPAIN",
+   "EUROPE"
+  ],
+  "siblings": []
+ },
+ "NAVARRE": {
+  "surface": "Navarre",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "SPAIN",
+   "EUROPE"
+  ],
+  "siblings": [
+   "CATALONIA",
+   "COMMUNITY_OF_MADRID",
+   "ANDALUSIA",
+   "PAIS_VASCO",
+   "GALICIA",
+   "CASTILE_AND_LEON",
+   "VALENCIAN_COMMUNITY"
+  ]
+ },
+ "PAMPLONA": {
+  "surface": "Pamplona",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "NAVARRE",
+   "SPAIN",
+   "EUROPE"
+  ],
+  "siblings": []
+ },
+ "CASTILE_AND_LEON": {
+  "surface": "Castile and Leon",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "SPAIN",
+   "EUROPE"
+  ],
+  "siblings": [
+   "CATALONIA",
+   "COMMUNITY_OF_MADRID",
+   "ANDALUSIA",
+   "PAIS_VASCO",
+   "GALICIA",
+   "NAVARRE",
+   "VALENCIAN_COMMUNITY"
+  ]
+ },
+ "SALAMANCA": {
+  "surface": "Salamanca",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "CASTILE_AND_LEON",
+   "SPAIN",
+   "EUROPE"
+  ],
+  "siblings": []
+ },
+ "VALENCIAN_COMMUNITY": {
+  "surface": "Valencian Community",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "SPAIN",
+   "EUROPE"
+  ],
+  "siblings": [
+   "CATALONIA",
+   "COMMUNITY_OF_MADRID",
+   "ANDALUSIA",
+   "PAIS_VASCO",
+   "GALICIA",
+   "NAVARRE",
+   "CASTILE_AND_LEON"
+  ]
+ },
+ "ALICANTE": {
+  "surface": "Alicante",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "VALENCIAN_COMMUNITY",
+   "SPAIN",
+   "EUROPE"
+  ],
+  "siblings": []
+ },
+ "ITALY": {
+  "surface": "Italy",
+  "level": "country",
+  "aliases": [],
+  "ancestors": [
+   "EUROPE"
+  ],
+  "siblings": [
+   "SPAIN",
+   "FRANCE"
+  ]
+ },
+ "LOMBARDY": {
+  "surface": "Lombardy",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "ITALY",
+   "EUROPE"
+  ],
+  "siblings": [
+   "LAZIO",
+   "TUSCANY",
+   "CAMPANIA",
+   "SICILY",
+   "VENETO",
+   "PIEDMONT",
+   "EMILIA_ROMAGNA"
+  ]
+ },
+ "MILAN": {
+  "surface": "Milan",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "LOMBARDY",
+   "ITALY",
+   "EUROPE"
+  ],
+  "siblings": []
+ },
+ "LAZIO": {
+  "surface": "Lazio",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "ITALY",
+   "EUROPE"
+  ],
+  "siblings": [
+   "LOMBARDY",
+   "TUSCANY",
+   "CAMPANIA",
+   "SICILY",
+   "VENETO",
+   "PIEDMONT",
+   "EMILIA_ROMAGNA"
+  ]
+ },
+ "ROME": {
+  "surface": "Rome",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "LAZIO",
+   "ITALY",
+   "EUROPE"
+  ],
+  "siblings": []
+ },
+ "TUSCANY": {
+  "surface": "Tuscany",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "ITALY",
+   "EUROPE"
+  ],
+  "siblings": [
+   "LOMBARDY",
+   "LAZIO",
+   "CAMPANIA",
+   "SICILY",
+   "VENETO",
+   "PIEDMONT",
+   "EMILIA_ROMAGNA"
+  ]
+ },
+ "FLORENCE": {
+  "surface": "Florence",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "TUSCANY",
+   "ITALY",
+   "EUROPE"
+  ],
+  "siblings": [
+   "SIENA"
+  ]
+ },
+ "SIENA": {
+  "surface": "Siena",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "TUSCANY",
+   "ITALY",
+   "EUROPE"
+  ],
+  "siblings": [
+   "FLORENCE"
+  ]
+ },
+ "CAMPANIA": {
+  "surface": "Campania",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "ITALY",
+   "EUROPE"
+  ],
+  "siblings": [
+   "LOMBARDY",
+   "LAZIO",
+   "TUSCANY",
+   "SICILY",
+   "VENETO",
+   "PIEDMONT",
+   "EMILIA_ROMAGNA"
+  ]
+ },
+ "NAPLES": {
+  "surface": "Naples",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "CAMPANIA",
+   "ITALY",
+   "EUROPE"
+  ],
+  "siblings": [
+   "POMPEII"
+  ]
+ },
+ "POMPEII": {
+  "surface": "Pompeii",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "CAMPANIA",
+   "ITALY",
+   "EUROPE"
+  ],
+  "siblings": [
+   "NAPLES"
+  ]
+ },
+ "SICILY": {
+  "surface": "Sicily",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "ITALY",
+   "EUROPE"
+  ],
+  "siblings": [
+   "LOMBARDY",
+   "LAZIO",
+   "TUSCANY",
+   "CAMPANIA",
+   "VENETO",
+   "PIEDMONT",
+   "EMILIA_ROMAGNA"
+  ]
+ },
+ "PALERMO": {
+  "surface": "Palermo",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "SICILY",
+   "ITALY",
+   "EUROPE"
+  ],
+  "siblings": []
+ },
+ "VENETO": {
+  "surface": "Veneto",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "ITALY",
+   "EUROPE"
+  ],
+  "siblings": [
+   "LOMBARDY",
+   "LAZIO",
+   "TUSCANY",
+   "CAMPANIA",
+   "SICILY",
+   "PIEDMONT",
+   "EMILIA_ROMAGNA"
+  ]
+ },
+ "VENICE": {
+  "surface": "Venice",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "VENETO",
+   "ITALY",
+   "EUROPE"
+  ],
+  "siblings": []
+ },
+ "PIEDMONT": {
+  "surface": "Piedmont",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "ITALY",
+   "EUROPE"
+  ],
+  "siblings": [
+   "LOMBARDY",
+   "LAZIO",
+   "TUSCANY",
+   "CAMPANIA",
+   "SICILY",
+   "VENETO",
+   "EMILIA_ROMAGNA"
+  ]
+ },
+ "TURIN": {
+  "surface": "Turin",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "PIEDMONT",
+   "ITALY",
+   "EUROPE"
+  ],
+  "siblings": []
+ },
+ "EMILIA_ROMAGNA": {
+  "surface": "Emilia-Romagna",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "ITALY",
+   "EUROPE"
+  ],
+  "siblings": [
+   "LOMBARDY",
+   "LAZIO",
+   "TUSCANY",
+   "CAMPANIA",
+   "SICILY",
+   "VENETO",
+   "PIEDMONT"
+  ]
+ },
+ "BOLOGNA": {
+  "surface": "Bologna",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "EMILIA_ROMAGNA",
+   "ITALY",
+   "EUROPE"
+  ],
+  "siblings": []
+ },
+ "FRANCE": {
+  "surface": "France",
+  "level": "country",
+  "aliases": [],
+  "ancestors": [
+   "EUROPE"
+  ],
+  "siblings": [
+   "SPAIN",
+   "ITALY"
+  ]
+ },
+ "ILE_DE_FRANCE": {
+  "surface": "Ile-de-France",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "FRANCE",
+   "EUROPE"
+  ],
+  "siblings": [
+   "PROVENCE_ALPES_COTE_D_AZUR",
+   "AUVERGNE_RHONE_ALPES"
+  ]
+ },
+ "PARIS": {
+  "surface": "Paris",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "ILE_DE_FRANCE",
+   "FRANCE",
+   "EUROPE"
+  ],
+  "siblings": []
+ },
+ "PROVENCE_ALPES_COTE_D_AZUR": {
+  "surface": "Provence-Alpes-Cote d'Azur",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "FRANCE",
+   "EUROPE"
+  ],
+  "siblings": [
+   "ILE_DE_FRANCE",
+   "AUVERGNE_RHONE_ALPES"
+  ]
+ },
+ "MARSEILLE": {
+  "surface": "Marseille",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "PROVENCE_ALPES_COTE_D_AZUR",
+   "FRANCE",
+   "EUROPE"
+  ],
+  "siblings": [
+   "NICE"
+  ]
+ },
+ "NICE": {
+  "surface": "Nice",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "PROVENCE_ALPES_COTE_D_AZUR",
+   "FRANCE",
+   "EUROPE"
+  ],
+  "siblings": [
+   "MARSEILLE"
+  ]
+ },
+ "AUVERGNE_RHONE_ALPES": {
+  "surface": "Auvergne-Rhone-Alpes",
+  "level": "state",
+  "aliases": [],
+  "ancestors": [
+   "FRANCE",
+   "EUROPE"
+  ],
+  "siblings": [
+   "ILE_DE_FRANCE",
+   "PROVENCE_ALPES_COTE_D_AZUR"
+  ]
+ },
+ "LYON": {
+  "surface": "Lyon",
+  "level": "city",
+  "aliases": [],
+  "ancestors": [
+   "AUVERGNE_RHONE_ALPES",
+   "FRANCE",
+   "EUROPE"
+  ],
+  "siblings": []
+ }
+}

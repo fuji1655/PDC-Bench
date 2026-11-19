@@ -1,0 +1,833 @@
+{
+ "TECHNOLOGY_SECTOR": {
+  "surface": "Technology",
+  "level": "sector",
+  "aliases": [],
+  "ancestors": [],
+  "siblings": []
+ },
+ "SOFTWARE_ENGINEERING_DOMAIN": {
+  "surface": "Software Engineering",
+  "level": "occ_domain",
+  "aliases": [],
+  "ancestors": [
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "APPLICATION_DEVELOPMENT_CLUSTER": {
+  "surface": "Application Development",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "SOFTWARE_ENGINEERING_DOMAIN",
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "SOFTWARE_ENGINEER": {
+  "surface": "Software Engineer",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "APPLICATION_DEVELOPMENT_CLUSTER",
+   "SOFTWARE_ENGINEERING_DOMAIN",
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "BACKEND_DEVELOPER": {
+  "surface": "Backend Developer",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "APPLICATION_DEVELOPMENT_CLUSTER",
+   "SOFTWARE_ENGINEERING_DOMAIN",
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "WEB_DEVELOPMENT_CLUSTER": {
+  "surface": "Web Development",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "SOFTWARE_ENGINEERING_DOMAIN",
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "WEB_DEVELOPER": {
+  "surface": "Web Developer",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "WEB_DEVELOPMENT_CLUSTER",
+   "SOFTWARE_ENGINEERING_DOMAIN",
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "FRONT_END_DEVELOPER": {
+  "surface": "Front-End Developer",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "WEB_DEVELOPMENT_CLUSTER",
+   "SOFTWARE_ENGINEERING_DOMAIN",
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "DATA_SCIENCE_DOMAIN": {
+  "surface": "Data Science",
+  "level": "occ_domain",
+  "aliases": [],
+  "ancestors": [
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "DATA_ANALYTICS_CLUSTER": {
+  "surface": "Data Analytics",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "DATA_SCIENCE_DOMAIN",
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "DATA_SCIENTIST": {
+  "surface": "Data Scientist",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "DATA_ANALYTICS_CLUSTER",
+   "DATA_SCIENCE_DOMAIN",
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "DATA_ANALYST": {
+  "surface": "Data Analyst",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "DATA_ANALYTICS_CLUSTER",
+   "DATA_SCIENCE_DOMAIN",
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "MACHINE_LEARNING_CLUSTER": {
+  "surface": "Machine Learning",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "DATA_SCIENCE_DOMAIN",
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "MACHINE_LEARNING_ENGINEER": {
+  "surface": "Machine Learning Engineer",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "MACHINE_LEARNING_CLUSTER",
+   "DATA_SCIENCE_DOMAIN",
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "AI_RESEARCH_SCIENTIST": {
+  "surface": "AI Research Scientist",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "MACHINE_LEARNING_CLUSTER",
+   "DATA_SCIENCE_DOMAIN",
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "IT_INFRASTRUCTURE_DOMAIN": {
+  "surface": "IT Infrastructure",
+  "level": "occ_domain",
+  "aliases": [],
+  "ancestors": [
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "NETWORKS_AND_SYSTEMS_CLUSTER": {
+  "surface": "Networks and Systems",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "IT_INFRASTRUCTURE_DOMAIN",
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "NETWORK_ENGINEER": {
+  "surface": "Network Engineer",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "NETWORKS_AND_SYSTEMS_CLUSTER",
+   "IT_INFRASTRUCTURE_DOMAIN",
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "SYSTEMS_ADMINISTRATOR": {
+  "surface": "Systems Administrator",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "NETWORKS_AND_SYSTEMS_CLUSTER",
+   "IT_INFRASTRUCTURE_DOMAIN",
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "CYBERSECURITY_CLUSTER": {
+  "surface": "Cybersecurity",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "IT_INFRASTRUCTURE_DOMAIN",
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "INFORMATION_SECURITY_ANALYST": {
+  "surface": "Information Security Analyst",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "CYBERSECURITY_CLUSTER",
+   "IT_INFRASTRUCTURE_DOMAIN",
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "DEVOPS_ENGINEER": {
+  "surface": "DevOps Engineer",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "CYBERSECURITY_CLUSTER",
+   "IT_INFRASTRUCTURE_DOMAIN",
+   "TECHNOLOGY_SECTOR"
+  ],
+  "siblings": []
+ },
+ "HEALTHCARE_SECTOR": {
+  "surface": "Healthcare",
+  "level": "sector",
+  "aliases": [],
+  "ancestors": [],
+  "siblings": []
+ },
+ "PHYSICIANS_AND_SURGEONS_DOMAIN": {
+  "surface": "Physicians and Surgeons",
+  "level": "occ_domain",
+  "aliases": [],
+  "ancestors": [
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "SURGERY_CLUSTER": {
+  "surface": "Surgery",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "PHYSICIANS_AND_SURGEONS_DOMAIN",
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "CARDIAC_SURGEON": {
+  "surface": "Cardiac Surgeon",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "SURGERY_CLUSTER",
+   "PHYSICIANS_AND_SURGEONS_DOMAIN",
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "ORTHOPEDIC_SURGEON": {
+  "surface": "Orthopedic Surgeon",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "SURGERY_CLUSTER",
+   "PHYSICIANS_AND_SURGEONS_DOMAIN",
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "INTERNAL_MEDICINE_CLUSTER": {
+  "surface": "Internal Medicine",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "PHYSICIANS_AND_SURGEONS_DOMAIN",
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "CARDIOLOGIST": {
+  "surface": "Cardiologist",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "INTERNAL_MEDICINE_CLUSTER",
+   "PHYSICIANS_AND_SURGEONS_DOMAIN",
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "GENERAL_PRACTITIONER": {
+  "surface": "General Practitioner",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "INTERNAL_MEDICINE_CLUSTER",
+   "PHYSICIANS_AND_SURGEONS_DOMAIN",
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "NURSING_DOMAIN": {
+  "surface": "Nursing",
+  "level": "occ_domain",
+  "aliases": [],
+  "ancestors": [
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "GENERAL_NURSING_CLUSTER": {
+  "surface": "General Nursing",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "NURSING_DOMAIN",
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "REGISTERED_NURSE": {
+  "surface": "Registered Nurse",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "GENERAL_NURSING_CLUSTER",
+   "NURSING_DOMAIN",
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "NURSE_PRACTITIONER": {
+  "surface": "Nurse Practitioner",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "GENERAL_NURSING_CLUSTER",
+   "NURSING_DOMAIN",
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "SPECIALIZED_NURSING_CLUSTER": {
+  "surface": "Specialized Nursing",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "NURSING_DOMAIN",
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "PEDIATRIC_NURSE": {
+  "surface": "Pediatric Nurse",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "SPECIALIZED_NURSING_CLUSTER",
+   "NURSING_DOMAIN",
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "CRITICAL_CARE_NURSE": {
+  "surface": "Critical Care Nurse",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "SPECIALIZED_NURSING_CLUSTER",
+   "NURSING_DOMAIN",
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "ALLIED_HEALTH_DOMAIN": {
+  "surface": "Allied Health",
+  "level": "occ_domain",
+  "aliases": [],
+  "ancestors": [
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "REHABILITATION_THERAPY_CLUSTER": {
+  "surface": "Rehabilitation Therapy",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "ALLIED_HEALTH_DOMAIN",
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "PHYSICAL_THERAPIST": {
+  "surface": "Physical Therapist",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "REHABILITATION_THERAPY_CLUSTER",
+   "ALLIED_HEALTH_DOMAIN",
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "OCCUPATIONAL_THERAPIST": {
+  "surface": "Occupational Therapist",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "REHABILITATION_THERAPY_CLUSTER",
+   "ALLIED_HEALTH_DOMAIN",
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "PHARMACY_CLUSTER": {
+  "surface": "Pharmacy",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "ALLIED_HEALTH_DOMAIN",
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "PHARMACIST": {
+  "surface": "Pharmacist",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "PHARMACY_CLUSTER",
+   "ALLIED_HEALTH_DOMAIN",
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "CLINICAL_PHARMACIST": {
+  "surface": "Clinical Pharmacist",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "PHARMACY_CLUSTER",
+   "ALLIED_HEALTH_DOMAIN",
+   "HEALTHCARE_SECTOR"
+  ],
+  "siblings": []
+ },
+ "EDUCATION_SECTOR": {
+  "surface": "Education",
+  "level": "sector",
+  "aliases": [],
+  "ancestors": [],
+  "siblings": []
+ },
+ "POSTSECONDARY_EDUCATION_DOMAIN": {
+  "surface": "Postsecondary Education",
+  "level": "occ_domain",
+  "aliases": [],
+  "ancestors": [
+   "EDUCATION_SECTOR"
+  ],
+  "siblings": []
+ },
+ "FACULTY_CLUSTER": {
+  "surface": "Faculty",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "POSTSECONDARY_EDUCATION_DOMAIN",
+   "EDUCATION_SECTOR"
+  ],
+  "siblings": []
+ },
+ "PROFESSOR": {
+  "surface": "Professor",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "FACULTY_CLUSTER",
+   "POSTSECONDARY_EDUCATION_DOMAIN",
+   "EDUCATION_SECTOR"
+  ],
+  "siblings": []
+ },
+ "ASSOCIATE_PROFESSOR": {
+  "surface": "Associate Professor",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "FACULTY_CLUSTER",
+   "POSTSECONDARY_EDUCATION_DOMAIN",
+   "EDUCATION_SECTOR"
+  ],
+  "siblings": []
+ },
+ "ACADEMIC_RESEARCH_CLUSTER": {
+  "surface": "Academic Research",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "POSTSECONDARY_EDUCATION_DOMAIN",
+   "EDUCATION_SECTOR"
+  ],
+  "siblings": []
+ },
+ "POSTDOCTORAL_RESEARCHER": {
+  "surface": "Postdoctoral Researcher",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "ACADEMIC_RESEARCH_CLUSTER",
+   "POSTSECONDARY_EDUCATION_DOMAIN",
+   "EDUCATION_SECTOR"
+  ],
+  "siblings": []
+ },
+ "RESEARCH_FELLOW": {
+  "surface": "Research Fellow",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "ACADEMIC_RESEARCH_CLUSTER",
+   "POSTSECONDARY_EDUCATION_DOMAIN",
+   "EDUCATION_SECTOR"
+  ],
+  "siblings": []
+ },
+ "SCHOOL_EDUCATION_DOMAIN": {
+  "surface": "School Education",
+  "level": "occ_domain",
+  "aliases": [],
+  "ancestors": [
+   "EDUCATION_SECTOR"
+  ],
+  "siblings": []
+ },
+ "SECONDARY_TEACHING_CLUSTER": {
+  "surface": "Secondary Teaching",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "SCHOOL_EDUCATION_DOMAIN",
+   "EDUCATION_SECTOR"
+  ],
+  "siblings": []
+ },
+ "HIGH_SCHOOL_TEACHER": {
+  "surface": "High School Teacher",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "SECONDARY_TEACHING_CLUSTER",
+   "SCHOOL_EDUCATION_DOMAIN",
+   "EDUCATION_SECTOR"
+  ],
+  "siblings": []
+ },
+ "MATHEMATICS_TEACHER": {
+  "surface": "Mathematics Teacher",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "SECONDARY_TEACHING_CLUSTER",
+   "SCHOOL_EDUCATION_DOMAIN",
+   "EDUCATION_SECTOR"
+  ],
+  "siblings": []
+ },
+ "PRIMARY_TEACHING_CLUSTER": {
+  "surface": "Primary Teaching",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "SCHOOL_EDUCATION_DOMAIN",
+   "EDUCATION_SECTOR"
+  ],
+  "siblings": []
+ },
+ "ELEMENTARY_SCHOOL_TEACHER": {
+  "surface": "Elementary School Teacher",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "PRIMARY_TEACHING_CLUSTER",
+   "SCHOOL_EDUCATION_DOMAIN",
+   "EDUCATION_SECTOR"
+  ],
+  "siblings": []
+ },
+ "SPECIAL_EDUCATION_TEACHER": {
+  "surface": "Special Education Teacher",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "PRIMARY_TEACHING_CLUSTER",
+   "SCHOOL_EDUCATION_DOMAIN",
+   "EDUCATION_SECTOR"
+  ],
+  "siblings": []
+ },
+ "BUSINESS_SECTOR": {
+  "surface": "Business",
+  "level": "sector",
+  "aliases": [],
+  "ancestors": [],
+  "siblings": []
+ },
+ "FINANCE_DOMAIN": {
+  "surface": "Finance",
+  "level": "occ_domain",
+  "aliases": [],
+  "ancestors": [
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "INVESTMENT_CLUSTER": {
+  "surface": "Investment",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "FINANCE_DOMAIN",
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "INVESTMENT_BANKER": {
+  "surface": "Investment Banker",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "INVESTMENT_CLUSTER",
+   "FINANCE_DOMAIN",
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "PORTFOLIO_MANAGER": {
+  "surface": "Portfolio Manager",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "INVESTMENT_CLUSTER",
+   "FINANCE_DOMAIN",
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "ACCOUNTING_CLUSTER": {
+  "surface": "Accounting",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "FINANCE_DOMAIN",
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "ACCOUNTANT": {
+  "surface": "Accountant",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "ACCOUNTING_CLUSTER",
+   "FINANCE_DOMAIN",
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "AUDITOR": {
+  "surface": "Auditor",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "ACCOUNTING_CLUSTER",
+   "FINANCE_DOMAIN",
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "MANAGEMENT_DOMAIN": {
+  "surface": "Management",
+  "level": "occ_domain",
+  "aliases": [],
+  "ancestors": [
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "OPERATIONS_CLUSTER": {
+  "surface": "Operations",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "MANAGEMENT_DOMAIN",
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "OPERATIONS_MANAGER": {
+  "surface": "Operations Manager",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "OPERATIONS_CLUSTER",
+   "MANAGEMENT_DOMAIN",
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "PROJECT_MANAGER": {
+  "surface": "Project Manager",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "OPERATIONS_CLUSTER",
+   "MANAGEMENT_DOMAIN",
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "HUMAN_RESOURCES_CLUSTER": {
+  "surface": "Human Resources",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "MANAGEMENT_DOMAIN",
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "HR_MANAGER": {
+  "surface": "HR Manager",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "HUMAN_RESOURCES_CLUSTER",
+   "MANAGEMENT_DOMAIN",
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "RECRUITER": {
+  "surface": "Recruiter",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "HUMAN_RESOURCES_CLUSTER",
+   "MANAGEMENT_DOMAIN",
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "MARKETING_DOMAIN": {
+  "surface": "Marketing",
+  "level": "occ_domain",
+  "aliases": [],
+  "ancestors": [
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "BRAND_MANAGEMENT_CLUSTER": {
+  "surface": "Brand Management",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "MARKETING_DOMAIN",
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "MARKETING_MANAGER": {
+  "surface": "Marketing Manager",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "BRAND_MANAGEMENT_CLUSTER",
+   "MARKETING_DOMAIN",
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "BRAND_MANAGER": {
+  "surface": "Brand Manager",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "BRAND_MANAGEMENT_CLUSTER",
+   "MARKETING_DOMAIN",
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "MARKET_RESEARCH_CLUSTER": {
+  "surface": "Market Research",
+  "level": "role_cluster",
+  "aliases": [],
+  "ancestors": [
+   "MARKETING_DOMAIN",
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "MARKET_RESEARCH_ANALYST": {
+  "surface": "Market Research Analyst",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "MARKET_RESEARCH_CLUSTER",
+   "MARKETING_DOMAIN",
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ },
+ "PUBLIC_RELATIONS_SPECIALIST": {
+  "surface": "Public Relations Specialist",
+  "level": "job",
+  "aliases": [],
+  "ancestors": [
+   "MARKET_RESEARCH_CLUSTER",
+   "MARKETING_DOMAIN",
+   "BUSINESS_SECTOR"
+  ],
+  "siblings": []
+ }
+}

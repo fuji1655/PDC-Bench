@@ -1,0 +1,62 @@
+[
+  {
+    "id": "T1",
+    "task_type": "non_relevant",
+    "description": "Professional background summary",
+    "text": "Summarize this person's professional background in 3 bullet points."
+  },
+  {
+    "id": "T2",
+    "task_type": "non_relevant",
+    "description": "Resume improvement suggestions",
+    "text": "Suggest three improvements to make this profile a stronger resume."
+  },
+  {
+    "id": "T3",
+    "task_type": "non_relevant",
+    "description": "Certification recommendations",
+    "text": "Recommend professional certifications relevant to this person's field."
+  },
+  {
+    "id": "T4",
+    "task_type": "non_relevant",
+    "description": "Interview question drafting",
+    "text": "Draft three interview questions to assess this candidate's expertise."
+  },
+  {
+    "id": "T5",
+    "task_type": "non_relevant",
+    "description": "Skill development plan",
+    "text": "Propose a 3-month professional development plan based on the skills shown."
+  },
+  {
+    "id": "T6",
+    "task_type": "relevant",
+    "description": "Local community and event recommendations",
+    "text": "Recommend local professional communities and in-person networking events suited to this person."
+  },
+  {
+    "id": "T7",
+    "task_type": "relevant",
+    "description": "Region-specific industry and job-market suggestions",
+    "text": "Suggest location-specific industries or job markets where this person could advance their career."
+  },
+  {
+    "id": "T8",
+    "task_type": "relevant",
+    "description": "Explanation of the local environment's influence",
+    "text": "Describe how this person's local environment may have shaped their professional development."
+  },
+  {
+    "id": "T9",
+    "task_type": "relevant",
+    "description": "Recommendation of promising regions and job markets",
+    "text": "Recommend locations or job markets that would offer this person strong career opportunities."
+  },
+  {
+    "id": "T10",
+    "task_type": "relevant",
+    "description": "Introduction for a local event",
+    "text": "Write a short introduction of this person for a local industry event."
+  }
+]

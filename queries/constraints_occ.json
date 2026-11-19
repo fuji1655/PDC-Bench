@@ -1,0 +1,38 @@
+[
+  {
+    "id": "CN",
+    "tau_level": "always",
+    "description": "No constraint (control)",
+    "text": ""
+  },
+  {
+    "id": "C1",
+    "tau_level": "none",
+    "description": "No occupational information",
+    "text": "without mentioning any occupation or job-related information — do not reference job titles, role types, professional fields, or industry sectors of any kind"
+  },
+  {
+    "id": "C2",
+    "tau_level": "sector",
+    "description": "Sector only (no occupational domain or finer)",
+    "text": "mentioning the broad industry sector only if it is necessary for the task, but not the specific occupation (e.g., saying 'works in the technology sector' is acceptable, but not the exact job title) — do NOT mention specific occupational domains, role clusters, or job titles"
+  },
+  {
+    "id": "C3",
+    "tau_level": "occ_domain",
+    "description": "Up to occupational domain (no role cluster or job)",
+    "text": "using at most a general occupational field description, and only if it is necessary for the task (e.g., saying 'works in a clinical medicine field' is acceptable, but not the exact role or job title) — do NOT mention specific role clusters or job titles"
+  },
+  {
+    "id": "C4",
+    "tau_level": "role_cluster",
+    "description": "Up to role cluster (no specific job title)",
+    "text": "using at most a general role-type description, and only if it is necessary for the task (e.g., saying 'works in a clinical research role' is acceptable, but not the exact job title) — do NOT mention specific job titles"
+  },
+  {
+    "id": "CF",
+    "tau_level": "always",
+    "description": "Explicitly allowed up to job title (control)",
+    "text": "including specific job titles and occupational details where relevant"
+  }
+]

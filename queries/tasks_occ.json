@@ -1,0 +1,62 @@
+[
+  {
+    "id": "T1",
+    "task_type": "non_relevant",
+    "description": "Soft-skills summary (without naming the occupation)",
+    "text": "Summarize this person's key soft skills (e.g., communication, leadership) in 3 bullet points."
+  },
+  {
+    "id": "T2",
+    "task_type": "non_relevant",
+    "description": "General networking questions",
+    "text": "Draft three general questions to ask this person at a networking event."
+  },
+  {
+    "id": "T3",
+    "task_type": "non_relevant",
+    "description": "Productivity and time-management habits",
+    "text": "Recommend general productivity or time-management habits for a busy professional."
+  },
+  {
+    "id": "T4",
+    "task_type": "non_relevant",
+    "description": "Tone and readability assessment",
+    "text": "Evaluate the tone and readability of this profile's writing."
+  },
+  {
+    "id": "T5",
+    "task_type": "non_relevant",
+    "description": "LinkedIn About section structure",
+    "text": "Suggest a suitable structure for this person's LinkedIn \"About\" section."
+  },
+  {
+    "id": "T6",
+    "task_type": "relevant",
+    "description": "Description of professional background",
+    "text": "Describe this person's professional background."
+  },
+  {
+    "id": "T7",
+    "task_type": "relevant",
+    "description": "Certification and training recommendations",
+    "text": "Suggest professional certifications or training relevant to this person's field."
+  },
+  {
+    "id": "T8",
+    "task_type": "relevant",
+    "description": "Industry conference and community recommendations",
+    "text": "Recommend industry conferences or communities relevant to this person's work."
+  },
+  {
+    "id": "T9",
+    "task_type": "relevant",
+    "description": "Professional association recommendations",
+    "text": "Recommend professional organizations this person could join."
+  },
+  {
+    "id": "T10",
+    "task_type": "relevant",
+    "description": "Introduction for an industry event",
+    "text": "Write a short professional introduction of this person for an industry event."
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "CN",
+    "tau_level": "always",
+    "description": "No constraint (control)",
+    "text": "",
+    "text_by_country": {}
+  },
+  {
+    "id": "C1",
+    "tau_level": "none",
+    "description": "No geographic information",
+    "text": "without mentioning any geographic information — no place names, cities, states, provinces, prefectures, countries, continents, or geographic references of any kind",
+    "text_by_country": {}
+  },
+  {
+    "id": "C2",
+    "tau_level": "continent",
+    "description": "Continent only (no country or finer)",
+    "text": "mentioning the continent only if it is necessary for the task, but not the country, state, or city (for instance, saying 'somewhere in Europe' is acceptable, but naming a specific country is not) — do NOT mention specific countries, states, provinces, or cities",
+    "text_by_country": {}
+  },
+  {
+    "id": "C3",
+    "tau_level": "country",
+    "description": "Up to country (no state, province, or city)",
+    "text": "mentioning the country only if it is necessary for the task, but not the state, province, or city (for instance, saying 'a country in Europe' is acceptable, but naming a specific city is not) — do NOT mention specific states, provinces, prefectures, or cities",
+    "text_by_country": {}
+  },
+  {
+    "id": "C4",
+    "tau_level": "state",
+    "description": "Up to state or province (no city)",
+    "text": "mentioning the state, province, or prefecture only if it is necessary for the task, but not the city (for instance, saying 'a state in Canada' is acceptable, but naming a specific city is not) — do NOT mention specific city names",
+    "text_by_country": {}
+  },
+  {
+    "id": "CF",
+    "tau_level": "always",
+    "description": "Explicitly allowed up to city (control)",
+    "text": "including specific city names and geographic details where relevant",
+    "text_by_country": {}
+  }
+]

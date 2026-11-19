@@ -1,0 +1,828 @@
+{
+ "YOUNG": {
+  "surface": "Young",
+  "level": "life_phase",
+  "aliases": [
+   "young person",
+   "youth",
+   "young adult",
+   "under 30"
+  ],
+  "ancestors": [],
+  "siblings": []
+ },
+ "ADULT": {
+  "surface": "Adult",
+  "level": "life_phase",
+  "aliases": [
+   "middle-aged",
+   "working-age adult",
+   "in their prime",
+   "30s–50s"
+  ],
+  "ancestors": [],
+  "siblings": []
+ },
+ "SENIOR": {
+  "surface": "Senior",
+  "level": "life_phase",
+  "aliases": [
+   "senior",
+   "older adult",
+   "retiree",
+   "60 and over"
+  ],
+  "ancestors": [],
+  "siblings": []
+ },
+ "LATE_TEENS": {
+  "surface": "Late teens",
+  "level": "decade",
+  "aliases": [
+   "18–19 year olds",
+   "late teenage years"
+  ],
+  "ancestors": [
+   "YOUNG"
+  ],
+  "siblings": []
+ },
+ "TWENTIES": {
+  "surface": "Twenties",
+  "level": "decade",
+  "aliases": [
+   "20s",
+   "in their 20s",
+   "twenty-something"
+  ],
+  "ancestors": [
+   "YOUNG"
+  ],
+  "siblings": []
+ },
+ "THIRTIES": {
+  "surface": "Thirties",
+  "level": "decade",
+  "aliases": [
+   "30s",
+   "in their 30s",
+   "thirty-something"
+  ],
+  "ancestors": [
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "FORTIES": {
+  "surface": "Forties",
+  "level": "decade",
+  "aliases": [
+   "40s",
+   "in their 40s",
+   "forty-something"
+  ],
+  "ancestors": [
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "FIFTIES": {
+  "surface": "Fifties",
+  "level": "decade",
+  "aliases": [
+   "50s",
+   "in their 50s",
+   "fifty-something"
+  ],
+  "ancestors": [
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "SIXTIES": {
+  "surface": "Sixties",
+  "level": "decade",
+  "aliases": [
+   "60s",
+   "in their 60s",
+   "sixty-something"
+  ],
+  "ancestors": [
+   "SENIOR"
+  ],
+  "siblings": []
+ },
+ "SEVENTIES": {
+  "surface": "Seventies",
+  "level": "decade",
+  "aliases": [
+   "70s",
+   "in their 70s",
+   "seventy-something"
+  ],
+  "ancestors": [
+   "SENIOR"
+  ],
+  "siblings": []
+ },
+ "AGE_18": {
+  "surface": "18",
+  "level": "specific_age",
+  "aliases": [
+   "18 years old",
+   "age 18",
+   "18-year-old"
+  ],
+  "ancestors": [
+   "LATE_TEENS",
+   "YOUNG"
+  ],
+  "siblings": []
+ },
+ "AGE_19": {
+  "surface": "19",
+  "level": "specific_age",
+  "aliases": [
+   "19 years old",
+   "age 19",
+   "19-year-old"
+  ],
+  "ancestors": [
+   "LATE_TEENS",
+   "YOUNG"
+  ],
+  "siblings": []
+ },
+ "AGE_20": {
+  "surface": "20",
+  "level": "specific_age",
+  "aliases": [
+   "20 years old",
+   "age 20",
+   "20-year-old"
+  ],
+  "ancestors": [
+   "TWENTIES",
+   "YOUNG"
+  ],
+  "siblings": []
+ },
+ "AGE_21": {
+  "surface": "21",
+  "level": "specific_age",
+  "aliases": [
+   "21 years old",
+   "age 21",
+   "21-year-old"
+  ],
+  "ancestors": [
+   "TWENTIES",
+   "YOUNG"
+  ],
+  "siblings": []
+ },
+ "AGE_22": {
+  "surface": "22",
+  "level": "specific_age",
+  "aliases": [
+   "22 years old",
+   "age 22",
+   "22-year-old"
+  ],
+  "ancestors": [
+   "TWENTIES",
+   "YOUNG"
+  ],
+  "siblings": []
+ },
+ "AGE_23": {
+  "surface": "23",
+  "level": "specific_age",
+  "aliases": [
+   "23 years old",
+   "age 23",
+   "23-year-old"
+  ],
+  "ancestors": [
+   "TWENTIES",
+   "YOUNG"
+  ],
+  "siblings": []
+ },
+ "AGE_24": {
+  "surface": "24",
+  "level": "specific_age",
+  "aliases": [
+   "24 years old",
+   "age 24",
+   "24-year-old"
+  ],
+  "ancestors": [
+   "TWENTIES",
+   "YOUNG"
+  ],
+  "siblings": []
+ },
+ "AGE_25": {
+  "surface": "25",
+  "level": "specific_age",
+  "aliases": [
+   "25 years old",
+   "age 25",
+   "25-year-old"
+  ],
+  "ancestors": [
+   "TWENTIES",
+   "YOUNG"
+  ],
+  "siblings": []
+ },
+ "AGE_26": {
+  "surface": "26",
+  "level": "specific_age",
+  "aliases": [
+   "26 years old",
+   "age 26",
+   "26-year-old"
+  ],
+  "ancestors": [
+   "TWENTIES",
+   "YOUNG"
+  ],
+  "siblings": []
+ },
+ "AGE_27": {
+  "surface": "27",
+  "level": "specific_age",
+  "aliases": [
+   "27 years old",
+   "age 27",
+   "27-year-old"
+  ],
+  "ancestors": [
+   "TWENTIES",
+   "YOUNG"
+  ],
+  "siblings": []
+ },
+ "AGE_28": {
+  "surface": "28",
+  "level": "specific_age",
+  "aliases": [
+   "28 years old",
+   "age 28",
+   "28-year-old"
+  ],
+  "ancestors": [
+   "TWENTIES",
+   "YOUNG"
+  ],
+  "siblings": []
+ },
+ "AGE_29": {
+  "surface": "29",
+  "level": "specific_age",
+  "aliases": [
+   "29 years old",
+   "age 29",
+   "29-year-old"
+  ],
+  "ancestors": [
+   "TWENTIES",
+   "YOUNG"
+  ],
+  "siblings": []
+ },
+ "AGE_30": {
+  "surface": "30",
+  "level": "specific_age",
+  "aliases": [
+   "30 years old",
+   "age 30",
+   "30-year-old"
+  ],
+  "ancestors": [
+   "THIRTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_31": {
+  "surface": "31",
+  "level": "specific_age",
+  "aliases": [
+   "31 years old",
+   "age 31",
+   "31-year-old"
+  ],
+  "ancestors": [
+   "THIRTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_32": {
+  "surface": "32",
+  "level": "specific_age",
+  "aliases": [
+   "32 years old",
+   "age 32",
+   "32-year-old"
+  ],
+  "ancestors": [
+   "THIRTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_33": {
+  "surface": "33",
+  "level": "specific_age",
+  "aliases": [
+   "33 years old",
+   "age 33",
+   "33-year-old"
+  ],
+  "ancestors": [
+   "THIRTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_34": {
+  "surface": "34",
+  "level": "specific_age",
+  "aliases": [
+   "34 years old",
+   "age 34",
+   "34-year-old"
+  ],
+  "ancestors": [
+   "THIRTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_35": {
+  "surface": "35",
+  "level": "specific_age",
+  "aliases": [
+   "35 years old",
+   "age 35",
+   "35-year-old"
+  ],
+  "ancestors": [
+   "THIRTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_36": {
+  "surface": "36",
+  "level": "specific_age",
+  "aliases": [
+   "36 years old",
+   "age 36",
+   "36-year-old"
+  ],
+  "ancestors": [
+   "THIRTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_37": {
+  "surface": "37",
+  "level": "specific_age",
+  "aliases": [
+   "37 years old",
+   "age 37",
+   "37-year-old"
+  ],
+  "ancestors": [
+   "THIRTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_38": {
+  "surface": "38",
+  "level": "specific_age",
+  "aliases": [
+   "38 years old",
+   "age 38",
+   "38-year-old"
+  ],
+  "ancestors": [
+   "THIRTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_39": {
+  "surface": "39",
+  "level": "specific_age",
+  "aliases": [
+   "39 years old",
+   "age 39",
+   "39-year-old"
+  ],
+  "ancestors": [
+   "THIRTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_40": {
+  "surface": "40",
+  "level": "specific_age",
+  "aliases": [
+   "40 years old",
+   "age 40",
+   "40-year-old"
+  ],
+  "ancestors": [
+   "FORTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_41": {
+  "surface": "41",
+  "level": "specific_age",
+  "aliases": [
+   "41 years old",
+   "age 41",
+   "41-year-old"
+  ],
+  "ancestors": [
+   "FORTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_42": {
+  "surface": "42",
+  "level": "specific_age",
+  "aliases": [
+   "42 years old",
+   "age 42",
+   "42-year-old"
+  ],
+  "ancestors": [
+   "FORTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_43": {
+  "surface": "43",
+  "level": "specific_age",
+  "aliases": [
+   "43 years old",
+   "age 43",
+   "43-year-old"
+  ],
+  "ancestors": [
+   "FORTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_44": {
+  "surface": "44",
+  "level": "specific_age",
+  "aliases": [
+   "44 years old",
+   "age 44",
+   "44-year-old"
+  ],
+  "ancestors": [
+   "FORTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_45": {
+  "surface": "45",
+  "level": "specific_age",
+  "aliases": [
+   "45 years old",
+   "age 45",
+   "45-year-old"
+  ],
+  "ancestors": [
+   "FORTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_46": {
+  "surface": "46",
+  "level": "specific_age",
+  "aliases": [
+   "46 years old",
+   "age 46",
+   "46-year-old"
+  ],
+  "ancestors": [
+   "FORTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_47": {
+  "surface": "47",
+  "level": "specific_age",
+  "aliases": [
+   "47 years old",
+   "age 47",
+   "47-year-old"
+  ],
+  "ancestors": [
+   "FORTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_48": {
+  "surface": "48",
+  "level": "specific_age",
+  "aliases": [
+   "48 years old",
+   "age 48",
+   "48-year-old"
+  ],
+  "ancestors": [
+   "FORTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_49": {
+  "surface": "49",
+  "level": "specific_age",
+  "aliases": [
+   "49 years old",
+   "age 49",
+   "49-year-old"
+  ],
+  "ancestors": [
+   "FORTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_50": {
+  "surface": "50",
+  "level": "specific_age",
+  "aliases": [
+   "50 years old",
+   "age 50",
+   "50-year-old"
+  ],
+  "ancestors": [
+   "FIFTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_51": {
+  "surface": "51",
+  "level": "specific_age",
+  "aliases": [
+   "51 years old",
+   "age 51",
+   "51-year-old"
+  ],
+  "ancestors": [
+   "FIFTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_52": {
+  "surface": "52",
+  "level": "specific_age",
+  "aliases": [
+   "52 years old",
+   "age 52",
+   "52-year-old"
+  ],
+  "ancestors": [
+   "FIFTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_53": {
+  "surface": "53",
+  "level": "specific_age",
+  "aliases": [
+   "53 years old",
+   "age 53",
+   "53-year-old"
+  ],
+  "ancestors": [
+   "FIFTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_54": {
+  "surface": "54",
+  "level": "specific_age",
+  "aliases": [
+   "54 years old",
+   "age 54",
+   "54-year-old"
+  ],
+  "ancestors": [
+   "FIFTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_55": {
+  "surface": "55",
+  "level": "specific_age",
+  "aliases": [
+   "55 years old",
+   "age 55",
+   "55-year-old"
+  ],
+  "ancestors": [
+   "FIFTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_56": {
+  "surface": "56",
+  "level": "specific_age",
+  "aliases": [
+   "56 years old",
+   "age 56",
+   "56-year-old"
+  ],
+  "ancestors": [
+   "FIFTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_57": {
+  "surface": "57",
+  "level": "specific_age",
+  "aliases": [
+   "57 years old",
+   "age 57",
+   "57-year-old"
+  ],
+  "ancestors": [
+   "FIFTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_58": {
+  "surface": "58",
+  "level": "specific_age",
+  "aliases": [
+   "58 years old",
+   "age 58",
+   "58-year-old"
+  ],
+  "ancestors": [
+   "FIFTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_59": {
+  "surface": "59",
+  "level": "specific_age",
+  "aliases": [
+   "59 years old",
+   "age 59",
+   "59-year-old"
+  ],
+  "ancestors": [
+   "FIFTIES",
+   "ADULT"
+  ],
+  "siblings": []
+ },
+ "AGE_60": {
+  "surface": "60",
+  "level": "specific_age",
+  "aliases": [
+   "60 years old",
+   "age 60",
+   "60-year-old"
+  ],
+  "ancestors": [
+   "SIXTIES",
+   "SENIOR"
+  ],
+  "siblings": []
+ },
+ "AGE_62": {
+  "surface": "62",
+  "level": "specific_age",
+  "aliases": [
+   "62 years old",
+   "age 62",
+   "62-year-old"
+  ],
+  "ancestors": [
+   "SIXTIES",
+   "SENIOR"
+  ],
+  "siblings": []
+ },
+ "AGE_65": {
+  "surface": "65",
+  "level": "specific_age",
+  "aliases": [
+   "65 years old",
+   "age 65",
+   "65-year-old"
+  ],
+  "ancestors": [
+   "SIXTIES",
+   "SENIOR"
+  ],
+  "siblings": []
+ },
+ "AGE_68": {
+  "surface": "68",
+  "level": "specific_age",
+  "aliases": [
+   "68 years old",
+   "age 68",
+   "68-year-old"
+  ],
+  "ancestors": [
+   "SIXTIES",
+   "SENIOR"
+  ],
+  "siblings": []
+ },
+ "AGE_69": {
+  "surface": "69",
+  "level": "specific_age",
+  "aliases": [
+   "69 years old",
+   "age 69",
+   "69-year-old"
+  ],
+  "ancestors": [
+   "SIXTIES",
+   "SENIOR"
+  ],
+  "siblings": []
+ },
+ "AGE_70": {
+  "surface": "70",
+  "level": "specific_age",
+  "aliases": [
+   "70 years old",
+   "age 70",
+   "70-year-old"
+  ],
+  "ancestors": [
+   "SEVENTIES",
+   "SENIOR"
+  ],
+  "siblings": []
+ },
+ "AGE_72": {
+  "surface": "72",
+  "level": "specific_age",
+  "aliases": [
+   "72 years old",
+   "age 72",
+   "72-year-old"
+  ],
+  "ancestors": [
+   "SEVENTIES",
+   "SENIOR"
+  ],
+  "siblings": []
+ },
+ "AGE_75": {
+  "surface": "75",
+  "level": "specific_age",
+  "aliases": [
+   "75 years old",
+   "age 75",
+   "75-year-old"
+  ],
+  "ancestors": [
+   "SEVENTIES",
+   "SENIOR"
+  ],
+  "siblings": []
+ }
+}

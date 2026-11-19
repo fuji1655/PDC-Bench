@@ -1,0 +1,25 @@
+{
+ "note": "Merge table used only when counting leaves for the coverage measure gamma. Leaves in a containment relation (one is a sub-specialty of the other) are counted as one base occupation, so that non-exclusive leaves do not inflate the denominator. It does not affect the paths, the judge, or any violation metric. It is used for the robustness check of gamma reported in the appendix.",
+ "created": "2026-07-14",
+ "merge_to_base": {
+  "CLINICAL_PHARMACIST": "PHARMACIST",
+  "PEDIATRIC_NURSE": "REGISTERED_NURSE",
+  "CRITICAL_CARE_NURSE": "REGISTERED_NURSE",
+  "BACKEND_DEVELOPER": "SOFTWARE_ENGINEER",
+  "FRONT_END_DEVELOPER": "SOFTWARE_ENGINEER",
+  "WEB_DEVELOPER": "SOFTWARE_ENGINEER",
+  "ASSOCIATE_PROFESSOR": "PROFESSOR"
+ },
+ "rationale": {
+  "CLINICAL_PHARMACIST": "Sub-specialty of pharmacist (requires a pharmacist license)",
+  "PEDIATRIC_NURSE": "Specialization of registered nurse (requires an RN license)",
+  "CRITICAL_CARE_NURSE": "Specialization of registered nurse (requires an RN license)",
+  "BACKEND_DEVELOPER": "Sub-type of software engineer",
+  "FRONT_END_DEVELOPER": "Sub-type of software engineer",
+  "WEB_DEVELOPER": "Sub-type of software engineer",
+  "ASSOCIATE_PROFESSOR": "Covered by \"professor\" as a common occupation (different rank, same base occupation)",
+  "NURSE_PRACTITIONER": "Not merged: a separate occupation with its own license and prescribing authority",
+  "DATA_SCIENTIST/ML_ENGINEER/AI_RESEARCH_SCIENTIST": "Not merged: overlapping but treated as separate jobs in the labor market",
+  "POSTDOC/RESEARCH_FELLOW": "Not merged: may overlap but are separate institutional positions"
+ }
+}

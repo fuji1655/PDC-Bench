@@ -1,0 +1,693 @@
+{
+ "ASIAN": {
+  "surface": "Asian",
+  "level": "heritage",
+  "aliases": [],
+  "ancestors": [],
+  "siblings": [
+   "BLACK_OR_AFRICAN_AMERICAN",
+   "WHITE",
+   "HISPANIC_OR_LATINO",
+   "MIDDLE_EASTERN_OR_NORTH_AFRICAN",
+   "AMERICAN_INDIAN_OR_ALASKA_NATIVE",
+   "NATIVE_HAWAIIAN_OR_PACIFIC_ISLANDER"
+  ]
+ },
+ "EAST_ASIAN": {
+  "surface": "East Asian",
+  "level": "ethnic_group",
+  "aliases": [],
+  "ancestors": [
+   "ASIAN"
+  ],
+  "siblings": [
+   "SOUTH_ASIAN",
+   "SOUTHEAST_ASIAN"
+  ]
+ },
+ "HAN_CHINESE": {
+  "surface": "Han Chinese",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "EAST_ASIAN",
+   "ASIAN"
+  ],
+  "siblings": [
+   "JAPANESE",
+   "KOREAN",
+   "CHINESE_AMERICAN",
+   "KOREAN_AMERICAN"
+  ]
+ },
+ "JAPANESE": {
+  "surface": "Japanese",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "EAST_ASIAN",
+   "ASIAN"
+  ],
+  "siblings": [
+   "HAN_CHINESE",
+   "KOREAN",
+   "CHINESE_AMERICAN",
+   "KOREAN_AMERICAN"
+  ]
+ },
+ "KOREAN": {
+  "surface": "Korean",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "EAST_ASIAN",
+   "ASIAN"
+  ],
+  "siblings": [
+   "HAN_CHINESE",
+   "JAPANESE",
+   "CHINESE_AMERICAN",
+   "KOREAN_AMERICAN"
+  ]
+ },
+ "CHINESE_AMERICAN": {
+  "surface": "Chinese-American",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "EAST_ASIAN",
+   "ASIAN"
+  ],
+  "siblings": [
+   "HAN_CHINESE",
+   "JAPANESE",
+   "KOREAN",
+   "KOREAN_AMERICAN"
+  ]
+ },
+ "KOREAN_AMERICAN": {
+  "surface": "Korean-American",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "EAST_ASIAN",
+   "ASIAN"
+  ],
+  "siblings": [
+   "HAN_CHINESE",
+   "JAPANESE",
+   "KOREAN",
+   "CHINESE_AMERICAN"
+  ]
+ },
+ "SOUTH_ASIAN": {
+  "surface": "South Asian",
+  "level": "ethnic_group",
+  "aliases": [],
+  "ancestors": [
+   "ASIAN"
+  ],
+  "siblings": [
+   "EAST_ASIAN",
+   "SOUTHEAST_ASIAN"
+  ]
+ },
+ "INDIAN": {
+  "surface": "Indian",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "SOUTH_ASIAN",
+   "ASIAN"
+  ],
+  "siblings": [
+   "PAKISTANI_BANGLADESHI"
+  ]
+ },
+ "PAKISTANI_BANGLADESHI": {
+  "surface": "Pakistani/Bangladeshi",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "SOUTH_ASIAN",
+   "ASIAN"
+  ],
+  "siblings": [
+   "INDIAN"
+  ]
+ },
+ "SOUTHEAST_ASIAN": {
+  "surface": "Southeast Asian",
+  "level": "ethnic_group",
+  "aliases": [],
+  "ancestors": [
+   "ASIAN"
+  ],
+  "siblings": [
+   "EAST_ASIAN",
+   "SOUTH_ASIAN"
+  ]
+ },
+ "THAI": {
+  "surface": "Thai",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "SOUTHEAST_ASIAN",
+   "ASIAN"
+  ],
+  "siblings": [
+   "VIETNAMESE",
+   "FILIPINO",
+   "INDONESIAN_MALAY"
+  ]
+ },
+ "VIETNAMESE": {
+  "surface": "Vietnamese",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "SOUTHEAST_ASIAN",
+   "ASIAN"
+  ],
+  "siblings": [
+   "THAI",
+   "FILIPINO",
+   "INDONESIAN_MALAY"
+  ]
+ },
+ "FILIPINO": {
+  "surface": "Filipino",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "SOUTHEAST_ASIAN",
+   "ASIAN"
+  ],
+  "siblings": [
+   "THAI",
+   "VIETNAMESE",
+   "INDONESIAN_MALAY"
+  ]
+ },
+ "INDONESIAN_MALAY": {
+  "surface": "Indonesian/Malay",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "SOUTHEAST_ASIAN",
+   "ASIAN"
+  ],
+  "siblings": [
+   "THAI",
+   "VIETNAMESE",
+   "FILIPINO"
+  ]
+ },
+ "BLACK_OR_AFRICAN_AMERICAN": {
+  "surface": "Black or African American",
+  "level": "heritage",
+  "aliases": [],
+  "ancestors": [],
+  "siblings": [
+   "ASIAN",
+   "WHITE",
+   "HISPANIC_OR_LATINO",
+   "MIDDLE_EASTERN_OR_NORTH_AFRICAN",
+   "AMERICAN_INDIAN_OR_ALASKA_NATIVE",
+   "NATIVE_HAWAIIAN_OR_PACIFIC_ISLANDER"
+  ]
+ },
+ "EAST_AFRICAN": {
+  "surface": "East African",
+  "level": "ethnic_group",
+  "aliases": [],
+  "ancestors": [
+   "BLACK_OR_AFRICAN_AMERICAN"
+  ],
+  "siblings": [
+   "WEST_AFRICAN"
+  ]
+ },
+ "ETHIOPIAN": {
+  "surface": "Ethiopian",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "EAST_AFRICAN",
+   "BLACK_OR_AFRICAN_AMERICAN"
+  ],
+  "siblings": [
+   "KENYAN"
+  ]
+ },
+ "KENYAN": {
+  "surface": "Kenyan",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "EAST_AFRICAN",
+   "BLACK_OR_AFRICAN_AMERICAN"
+  ],
+  "siblings": [
+   "ETHIOPIAN"
+  ]
+ },
+ "WEST_AFRICAN": {
+  "surface": "West African",
+  "level": "ethnic_group",
+  "aliases": [],
+  "ancestors": [
+   "BLACK_OR_AFRICAN_AMERICAN"
+  ],
+  "siblings": [
+   "EAST_AFRICAN"
+  ]
+ },
+ "NIGERIAN": {
+  "surface": "Nigerian",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "WEST_AFRICAN",
+   "BLACK_OR_AFRICAN_AMERICAN"
+  ],
+  "siblings": [
+   "GHANAIAN"
+  ]
+ },
+ "GHANAIAN": {
+  "surface": "Ghanaian",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "WEST_AFRICAN",
+   "BLACK_OR_AFRICAN_AMERICAN"
+  ],
+  "siblings": [
+   "NIGERIAN"
+  ]
+ },
+ "WHITE": {
+  "surface": "White",
+  "level": "heritage",
+  "aliases": [],
+  "ancestors": [],
+  "siblings": [
+   "ASIAN",
+   "BLACK_OR_AFRICAN_AMERICAN",
+   "HISPANIC_OR_LATINO",
+   "MIDDLE_EASTERN_OR_NORTH_AFRICAN",
+   "AMERICAN_INDIAN_OR_ALASKA_NATIVE",
+   "NATIVE_HAWAIIAN_OR_PACIFIC_ISLANDER"
+  ]
+ },
+ "WESTERN_EUROPEAN": {
+  "surface": "Western European",
+  "level": "ethnic_group",
+  "aliases": [],
+  "ancestors": [
+   "WHITE"
+  ],
+  "siblings": [
+   "SOUTHERN_EUROPEAN",
+   "NORTHERN_EUROPEAN"
+  ]
+ },
+ "FRENCH": {
+  "surface": "French",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "WESTERN_EUROPEAN",
+   "WHITE"
+  ],
+  "siblings": [
+   "GERMAN"
+  ]
+ },
+ "GERMAN": {
+  "surface": "German",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "WESTERN_EUROPEAN",
+   "WHITE"
+  ],
+  "siblings": [
+   "FRENCH"
+  ]
+ },
+ "SOUTHERN_EUROPEAN": {
+  "surface": "Southern European",
+  "level": "ethnic_group",
+  "aliases": [],
+  "ancestors": [
+   "WHITE"
+  ],
+  "siblings": [
+   "WESTERN_EUROPEAN",
+   "NORTHERN_EUROPEAN"
+  ]
+ },
+ "ITALIAN": {
+  "surface": "Italian",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "SOUTHERN_EUROPEAN",
+   "WHITE"
+  ],
+  "siblings": [
+   "SPANISH"
+  ]
+ },
+ "SPANISH": {
+  "surface": "Spanish",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "SOUTHERN_EUROPEAN",
+   "WHITE"
+  ],
+  "siblings": [
+   "ITALIAN"
+  ]
+ },
+ "NORTHERN_EUROPEAN": {
+  "surface": "Northern European",
+  "level": "ethnic_group",
+  "aliases": [],
+  "ancestors": [
+   "WHITE"
+  ],
+  "siblings": [
+   "WESTERN_EUROPEAN",
+   "SOUTHERN_EUROPEAN"
+  ]
+ },
+ "BRITISH_IRISH": {
+  "surface": "British/Irish",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "NORTHERN_EUROPEAN",
+   "WHITE"
+  ],
+  "siblings": [
+   "SCANDINAVIAN"
+  ]
+ },
+ "SCANDINAVIAN": {
+  "surface": "Scandinavian",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "NORTHERN_EUROPEAN",
+   "WHITE"
+  ],
+  "siblings": [
+   "BRITISH_IRISH"
+  ]
+ },
+ "HISPANIC_OR_LATINO": {
+  "surface": "Hispanic or Latino",
+  "level": "heritage",
+  "aliases": [
+   "Latino",
+   "Hispanic",
+   "Latin American",
+   "Latin American origin",
+   "Latino/a"
+  ],
+  "ancestors": [],
+  "siblings": [
+   "ASIAN",
+   "BLACK_OR_AFRICAN_AMERICAN",
+   "WHITE",
+   "MIDDLE_EASTERN_OR_NORTH_AFRICAN",
+   "AMERICAN_INDIAN_OR_ALASKA_NATIVE",
+   "NATIVE_HAWAIIAN_OR_PACIFIC_ISLANDER"
+  ]
+ },
+ "MEXICAN_CENTRAL_AMERICAN": {
+  "surface": "Mexican & Central American",
+  "level": "ethnic_group",
+  "aliases": [],
+  "ancestors": [
+   "HISPANIC_OR_LATINO"
+  ],
+  "siblings": [
+   "SOUTH_AMERICAN"
+  ]
+ },
+ "MEXICAN": {
+  "surface": "Mexican",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "MEXICAN_CENTRAL_AMERICAN",
+   "HISPANIC_OR_LATINO"
+  ],
+  "siblings": [
+   "CENTRAL_AMERICAN"
+  ]
+ },
+ "CENTRAL_AMERICAN": {
+  "surface": "Central American",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "MEXICAN_CENTRAL_AMERICAN",
+   "HISPANIC_OR_LATINO"
+  ],
+  "siblings": [
+   "MEXICAN"
+  ]
+ },
+ "SOUTH_AMERICAN": {
+  "surface": "South American",
+  "level": "ethnic_group",
+  "aliases": [],
+  "ancestors": [
+   "HISPANIC_OR_LATINO"
+  ],
+  "siblings": [
+   "MEXICAN_CENTRAL_AMERICAN"
+  ]
+ },
+ "COLOMBIAN_VENEZUELAN": {
+  "surface": "Colombian/Venezuelan",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "SOUTH_AMERICAN",
+   "HISPANIC_OR_LATINO"
+  ],
+  "siblings": [
+   "BRAZILIAN"
+  ]
+ },
+ "BRAZILIAN": {
+  "surface": "Brazilian",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "SOUTH_AMERICAN",
+   "HISPANIC_OR_LATINO"
+  ],
+  "siblings": [
+   "COLOMBIAN_VENEZUELAN"
+  ]
+ },
+ "MIDDLE_EASTERN_OR_NORTH_AFRICAN": {
+  "surface": "Middle Eastern or North African",
+  "level": "heritage",
+  "aliases": [],
+  "ancestors": [],
+  "siblings": [
+   "ASIAN",
+   "BLACK_OR_AFRICAN_AMERICAN",
+   "WHITE",
+   "HISPANIC_OR_LATINO",
+   "AMERICAN_INDIAN_OR_ALASKA_NATIVE",
+   "NATIVE_HAWAIIAN_OR_PACIFIC_ISLANDER"
+  ]
+ },
+ "NORTH_AFRICAN": {
+  "surface": "North African",
+  "level": "ethnic_group",
+  "aliases": [],
+  "ancestors": [
+   "MIDDLE_EASTERN_OR_NORTH_AFRICAN"
+  ],
+  "siblings": [
+   "MIDDLE_EASTERN"
+  ]
+ },
+ "EGYPTIAN": {
+  "surface": "Egyptian",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "NORTH_AFRICAN",
+   "MIDDLE_EASTERN_OR_NORTH_AFRICAN"
+  ],
+  "siblings": [
+   "MOROCCAN"
+  ]
+ },
+ "MOROCCAN": {
+  "surface": "Moroccan",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "NORTH_AFRICAN",
+   "MIDDLE_EASTERN_OR_NORTH_AFRICAN"
+  ],
+  "siblings": [
+   "EGYPTIAN"
+  ]
+ },
+ "AMERICAN_INDIAN_OR_ALASKA_NATIVE": {
+  "surface": "American Indian or Alaska Native",
+  "level": "heritage",
+  "aliases": [],
+  "ancestors": [],
+  "siblings": [
+   "ASIAN",
+   "BLACK_OR_AFRICAN_AMERICAN",
+   "WHITE",
+   "HISPANIC_OR_LATINO",
+   "MIDDLE_EASTERN_OR_NORTH_AFRICAN",
+   "NATIVE_HAWAIIAN_OR_PACIFIC_ISLANDER"
+  ]
+ },
+ "INDIGENOUS": {
+  "surface": "Indigenous",
+  "level": "ethnic_group",
+  "aliases": [],
+  "ancestors": [
+   "AMERICAN_INDIAN_OR_ALASKA_NATIVE"
+  ],
+  "siblings": [
+   "ALASKA_NATIVE"
+  ]
+ },
+ "NATIVE_AMERICAN": {
+  "surface": "Native American",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "INDIGENOUS",
+   "AMERICAN_INDIAN_OR_ALASKA_NATIVE"
+  ],
+  "siblings": [
+   "LATIN_AMERICAN_INDIGENOUS"
+  ]
+ },
+ "LATIN_AMERICAN_INDIGENOUS": {
+  "surface": "Latin American Indigenous",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "INDIGENOUS",
+   "AMERICAN_INDIAN_OR_ALASKA_NATIVE"
+  ],
+  "siblings": [
+   "NATIVE_AMERICAN"
+  ]
+ },
+ "NATIVE_HAWAIIAN_OR_PACIFIC_ISLANDER": {
+  "surface": "Native Hawaiian or Pacific Islander",
+  "level": "heritage",
+  "aliases": [],
+  "ancestors": [],
+  "siblings": [
+   "ASIAN",
+   "BLACK_OR_AFRICAN_AMERICAN",
+   "WHITE",
+   "HISPANIC_OR_LATINO",
+   "MIDDLE_EASTERN_OR_NORTH_AFRICAN",
+   "AMERICAN_INDIAN_OR_ALASKA_NATIVE"
+  ]
+ },
+ "POLYNESIAN": {
+  "surface": "Polynesian",
+  "level": "ethnic_group",
+  "aliases": [],
+  "ancestors": [
+   "NATIVE_HAWAIIAN_OR_PACIFIC_ISLANDER"
+  ],
+  "siblings": [
+   "MICRONESIAN"
+  ]
+ },
+ "NATIVE_HAWAIIAN": {
+  "surface": "Native Hawaiian",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "POLYNESIAN",
+   "NATIVE_HAWAIIAN_OR_PACIFIC_ISLANDER"
+  ],
+  "siblings": [
+   "SAMOAN"
+  ]
+ },
+ "SAMOAN": {
+  "surface": "Samoan",
+  "level": "ethnicity",
+  "aliases": [],
+  "ancestors": [
+   "POLYNESIAN",
+   "NATIVE_HAWAIIAN_OR_PACIFIC_ISLANDER"
+  ],
+  "siblings": [
+   "NATIVE_HAWAIIAN"
+  ]
+ },
+ "MIDDLE_EASTERN": {
+  "surface": "Middle Eastern",
+  "level": "ethnic_group",
+  "aliases": [
+   "Middle Eastern heritage",
+   "West Asian"
+  ],
+  "ancestors": [
+   "MIDDLE_EASTERN_OR_NORTH_AFRICAN"
+  ],
+  "siblings": [
+   "NORTH_AFRICAN"
+  ],
+  "note": "candidate-value only (no profile); added 2026-07-08 to break degenerate single-child branch"
+ },
+ "ALASKA_NATIVE": {
+  "surface": "Alaska Native",
+  "level": "ethnic_group",
+  "aliases": [
+   "Alaskan Native"
+  ],
+  "ancestors": [
+   "AMERICAN_INDIAN_OR_ALASKA_NATIVE"
+  ],
+  "siblings": [
+   "INDIGENOUS"
+  ],
+  "note": "candidate-value only (no profile); added 2026-07-08 to break degenerate single-child branch"
+ },
+ "MICRONESIAN": {
+  "surface": "Micronesian",
+  "level": "ethnic_group",
+  "aliases": [
+   "Micronesian heritage"
+  ],
+  "ancestors": [
+   "NATIVE_HAWAIIAN_OR_PACIFIC_ISLANDER"
+  ],
+  "siblings": [
+   "POLYNESIAN"
+  ],
+  "note": "candidate-value only (no profile); added 2026-07-08 to break degenerate single-child branch"
+ }
+}

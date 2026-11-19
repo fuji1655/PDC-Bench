@@ -1,0 +1,605 @@
+{
+ "description": "Model outputs used for judge calibration (judge_calibration) and for checking that the judge was not overfitted to the calibration set (overfitting_check). These 100 (model, sample) units are excluded from every reported metric.",
+ "units": [
+  {
+   "domain": "age",
+   "model": "gpt4o",
+   "id": "FORTIES_C1_T3",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "age",
+   "model": "sonnet5",
+   "id": "SENIOR_CN_T10",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "age",
+   "model": "gpt4o",
+   "id": "AGE_38_C2_T12",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "geo",
+   "model": "gpt5mini",
+   "id": "SIENA_CF_T3",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "geo",
+   "model": "qwen3_14b",
+   "id": "ASIA_CF_T8",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "geo",
+   "model": "gpt4omini",
+   "id": "MEXICO_CF_T5",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "geo",
+   "model": "sonnet4",
+   "id": "YUNNAN_C2_T7",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "gpt4omini",
+   "id": "NETWORK_ENGINEER_C1_T8",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "qwen3_32b",
+   "id": "NURSING_DOMAIN_CF_T7",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "llama_70b",
+   "id": "PHARMACY_CLUSTER_CN_T3",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "qwen3_32b",
+   "id": "TECHNOLOGY_SECTOR_C1_T8",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "race",
+   "model": "gpt4o",
+   "id": "INDIGENOUS_CF_T15",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "race",
+   "model": "sonnet5",
+   "id": "FILIPINO_CF_T5",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "race",
+   "model": "qwen3_32b",
+   "id": "NATIVE_HAWAIIAN_OR_PACIFIC_ISLANDER_C1_T14",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "geo",
+   "model": "gpt5",
+   "id": "SAKAI_CN_T8",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "geo",
+   "model": "gpt4o",
+   "id": "BOLOGNA_C3_T8",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "geo",
+   "model": "qwen3_14b",
+   "id": "SUWON_CN_T9",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "geo",
+   "model": "llama_8b",
+   "id": "CHUNCHEON_CN_T10",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "age",
+   "model": "gpt4omini",
+   "id": "AGE_31_CN_T9",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "age",
+   "model": "sonnet4",
+   "id": "AGE_53_C3_T7",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "age",
+   "model": "llama4_scout",
+   "id": "SEVENTIES_C1_T10",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "age",
+   "model": "llama_8b",
+   "id": "AGE_75_C2_T5",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "race",
+   "model": "gpt5mini",
+   "id": "INDIAN_C1_T5",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "race",
+   "model": "llama4_scout",
+   "id": "ITALIAN_CF_T19",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "race",
+   "model": "sonnet5",
+   "id": "GHANAIAN_CN_T3",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "race",
+   "model": "gpt5mini",
+   "id": "INDIAN_CF_T1",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "gpt5",
+   "id": "CRITICAL_CARE_NURSE_C3_T4",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "qwen3_14b",
+   "id": "CLINICAL_PHARMACIST_C2_T1",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "gpt5mini",
+   "id": "CLINICAL_PHARMACIST_CN_T4",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "gpt4o",
+   "id": "PEDIATRIC_NURSE_C4_T6",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "geo",
+   "model": "gpt5mini",
+   "id": "UNITED_STATES_C2_T4",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "geo",
+   "model": "gpt5mini",
+   "id": "HOUSTON_C4_T5",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "geo",
+   "model": "gpt5mini",
+   "id": "SICILY_CF_T2",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "geo",
+   "model": "sonnet5",
+   "id": "MEXICO_CF_T3",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "geo",
+   "model": "qwen3_32b",
+   "id": "SHIBUYA_C4_T4",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "geo",
+   "model": "sonnet5",
+   "id": "VALENCIAN_COMMUNITY_CF_T1",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "geo",
+   "model": "qwen3_32b",
+   "id": "GANGWON_CN_T5",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "geo",
+   "model": "qwen3_32b",
+   "id": "KOBE_CF_T1",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "geo",
+   "model": "sonnet5",
+   "id": "MONTERREY_C2_T9",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "geo",
+   "model": "sonnet5",
+   "id": "AUVERGNE_RHONE_ALPES_C3_T4",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "age",
+   "model": "gpt4o",
+   "id": "AGE_40_CF_T5",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "age",
+   "model": "qwen3_32b",
+   "id": "AGE_47_C3_T1",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "age",
+   "model": "llama_8b",
+   "id": "AGE_57_C3_T2",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "age",
+   "model": "llama_8b",
+   "id": "AGE_44_C2_T12",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "age",
+   "model": "gpt4o",
+   "id": "AGE_68_CF_T7",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "age",
+   "model": "llama_8b",
+   "id": "AGE_24_C1_T15",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "age",
+   "model": "gpt4o",
+   "id": "AGE_35_C1_T14",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "age",
+   "model": "gpt5mini",
+   "id": "AGE_37_CN_T5",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "age",
+   "model": "qwen3_32b",
+   "id": "AGE_42_CF_T16",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "age",
+   "model": "gpt4o",
+   "id": "AGE_54_CN_T7",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "geo",
+   "model": "sonnet5",
+   "id": "CALIFORNIA_C2_T2",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "geo",
+   "model": "qwen3_32b",
+   "id": "CHUNCHEON_C3_T7",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "geo",
+   "model": "gpt5mini",
+   "id": "LYON_CN_T3",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "age",
+   "model": "qwen3_32b",
+   "id": "YOUNG_C1_T5",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "age",
+   "model": "llama_8b",
+   "id": "AGE_32_C3_T8",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "age",
+   "model": "llama_8b",
+   "id": "AGE_29_CF_T1",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "race",
+   "model": "sonnet4",
+   "id": "BRAZILIAN_C2_T15",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "gpt4omini",
+   "id": "PHARMACIST_C4_T2",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "race",
+   "model": "gpt4omini",
+   "id": "BRAZILIAN_CN_T5",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "qwen3_32b",
+   "id": "PROFESSOR_CN_T5",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "gpt4o",
+   "id": "SOFTWARE_ENGINEER_C1_T10",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "qwen3_14b",
+   "id": "PHARMACIST_C2_T3",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "race",
+   "model": "sonnet5",
+   "id": "BRAZILIAN_CN_T1",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "qwen3_32b",
+   "id": "PHARMACIST_C4_T2",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "qwen3_14b",
+   "id": "SOFTWARE_ENGINEER_CN_T10",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "sonnet4",
+   "id": "SOFTWARE_ENGINEER_C1_T10",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "llama_70b",
+   "id": "PROFESSOR_C4_T10",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "gpt4o",
+   "id": "PROFESSOR_C1_T5",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "race",
+   "model": "llama4_scout",
+   "id": "BRAZILIAN_C1_T19",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "qwen3_14b",
+   "id": "PHARMACIST_C1_T1",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "race",
+   "model": "gpt5",
+   "id": "BRAZILIAN_C3_T13",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "gpt4o",
+   "id": "PROFESSOR_CF_T1",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "gpt4o",
+   "id": "SOFTWARE_ENGINEER_C4_T3",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "gpt5mini",
+   "id": "PHARMACIST_C1_T2",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "race",
+   "model": "gpt5",
+   "id": "BRAZILIAN_C2_T16",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "gpt4o",
+   "id": "PHARMACIST_C1_T1",
+   "reason": "judge_calibration"
+  },
+  {
+   "domain": "occ",
+   "model": "gpt5mini",
+   "id": "SOFTWARE_ENGINEER_C4_T5",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "occ",
+   "model": "sonnet4",
+   "id": "PROFESSOR_CN_T7",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "occ",
+   "model": "sonnet5",
+   "id": "PHARMACIST_CN_T7",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "occ",
+   "model": "sonnet5",
+   "id": "PHARMACIST_CF_T5",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "occ",
+   "model": "qwen3_14b",
+   "id": "SOFTWARE_ENGINEER_C1_T10",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "occ",
+   "model": "gpt4omini",
+   "id": "PROFESSOR_C4_T10",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "occ",
+   "model": "sonnet5",
+   "id": "PROFESSOR_C1_T5",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "occ",
+   "model": "qwen3_32b",
+   "id": "SOFTWARE_ENGINEER_C1_T10",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "occ",
+   "model": "gpt4o",
+   "id": "PROFESSOR_C1_T9",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "occ",
+   "model": "qwen3_32b",
+   "id": "PHARMACIST_C2_T2",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "race",
+   "model": "qwen3_32b",
+   "id": "BRAZILIAN_C1_T19",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "race",
+   "model": "gpt5",
+   "id": "BRAZILIAN_C2_T15",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "race",
+   "model": "gpt5mini",
+   "id": "BRAZILIAN_CN_T5",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "race",
+   "model": "gpt5mini",
+   "id": "BRAZILIAN_C2_T9",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "race",
+   "model": "gpt4omini",
+   "id": "BRAZILIAN_C3_T13",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "race",
+   "model": "sonnet4",
+   "id": "BRAZILIAN_C3_T13",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "race",
+   "model": "llama_8b",
+   "id": "BRAZILIAN_CF_T19",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "race",
+   "model": "gpt5mini",
+   "id": "BRAZILIAN_C1_T19",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "race",
+   "model": "llama_70b",
+   "id": "BRAZILIAN_CF_T5",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "race",
+   "model": "qwen3_32b",
+   "id": "BRAZILIAN_CF_T10",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "occ",
+   "model": "sonnet4",
+   "id": "PHARMACIST_CN_T7",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "occ",
+   "model": "gpt5",
+   "id": "SOFTWARE_ENGINEER_C4_T3",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "race",
+   "model": "qwen3_14b",
+   "id": "BRAZILIAN_C3_T13",
+   "reason": "overfitting_check"
+  },
+  {
+   "domain": "race",
+   "model": "gpt4omini",
+   "id": "BRAZILIAN_CF_T10",
+   "reason": "overfitting_check"
+  }
+ ]
+}

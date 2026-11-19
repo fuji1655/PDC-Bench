@@ -1,0 +1,32 @@
+[
+  {
+    "id": "CN",
+    "tau_level": "always",
+    "description": "No constraint (control)",
+    "text": ""
+  },
+  {
+    "id": "C1",
+    "tau_level": "none",
+    "description": "No age information",
+    "text": "without mentioning any age-related information — do not reference specific ages, age ranges, decades, or life stages of any kind"
+  },
+  {
+    "id": "C2",
+    "tau_level": "life_phase",
+    "description": "Life phase only (no decade or specific age)",
+    "text": "using broad life-stage references at most, and only if it is necessary for the task (e.g., 'young professional', 'experienced adult', 'senior professional') — do NOT mention specific age ranges, decades (e.g., '30s', '40s'), or exact ages"
+  },
+  {
+    "id": "C3",
+    "tau_level": "decade",
+    "description": "Up to decade (no specific age)",
+    "text": "using at most decade-level age references, and only if it is necessary for the task (e.g., 'in their 30s', 'early 40s') — do NOT mention specific ages"
+  },
+  {
+    "id": "CF",
+    "tau_level": "always",
+    "description": "Explicitly allowed up to specific age (control)",
+    "text": "including specific age information where relevant"
+  }
+]

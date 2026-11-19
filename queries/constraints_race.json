@@ -1,0 +1,32 @@
+[
+  {
+    "id": "CN",
+    "tau_level": "always",
+    "description": "No constraint (control)",
+    "text": ""
+  },
+  {
+    "id": "C1",
+    "tau_level": "none",
+    "description": "No race or ethnicity information",
+    "text": "without mentioning any ethnic, racial, or cultural background information — do not reference specific ethnicities, ethnic groups, heritage, or cultural identities of any kind"
+  },
+  {
+    "id": "C2",
+    "tau_level": "heritage",
+    "description": "Heritage category only (e.g., Asian, White, Black)",
+    "text": "using only broad racial-category references at most (e.g., 'Asian', 'Black', 'White') — do NOT mention any specific ethnic group (e.g., East Asian, West African) or individual ethnicity (e.g., Korean, Nigerian)"
+  },
+  {
+    "id": "C3",
+    "tau_level": "ethnic_group",
+    "description": "Up to ethnic group (e.g., East Asian); no specific ethnicity",
+    "text": "using at most ethnic group-level references (e.g., 'East Asian', 'West African', 'Northern European') — do NOT mention specific nationalities or individual ethnicities (e.g., do not say 'Korean', 'Nigerian', 'French')"
+  },
+  {
+    "id": "CF",
+    "tau_level": "always",
+    "description": "Explicitly allowed up to specific ethnicity (control)",
+    "text": "including specific ethnic and cultural background information where relevant"
+  }
+]
