@@ -84,8 +84,9 @@ Each output is judged by the two judges independently (GPT-4o and Claude Sonnet 
     python eval/run_grounding.py --judge claude-sonnet-5 --model gpt4o --domain all
 
 Results go to `results/grounding/<judge>/<domain>/<model>.json`. Use `--limit 5` to try a few
-samples first. Failed judge calls are stored as `{"error": ...}` and retried once at the end of
-a run; re-running the same command fills in any that remain. The metric scripts exclude such
+samples first. Failed judge calls, and answers that lack a required key or have an invalid value
+(`check_answer` in `eval/judge.py`), are stored as `{"error": ...}` and retried once at the end
+of a run; re-running the same command fills in any that remain. The metric scripts exclude such
 records from every denominator and print their number, so re-run grounding until none are left
 before reporting rates (in the paper's runs, none were left).
 

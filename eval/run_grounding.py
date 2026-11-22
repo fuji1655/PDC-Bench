@@ -23,7 +23,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from judge import build_messages, map_answer, validate
+from judge import build_messages, check_answer, map_answer, validate
 
 B = Path(__file__).resolve().parents[1]  # package root
 KGF = {d: f'kg/kg_{d}.json' for d in ('geo', 'age', 'race', 'occ')}
@@ -124,6 +124,11 @@ def main():
                 ans = json.loads(call_judge(a.judge, build_messages(d, out)))
             except Exception as e:
                 return i, dict(error=str(e)[:200])
+            bad = check_answer(ans)
+            if bad:
+                # Treated like a failed call: retried at the end of the run and, if it remains,
+                # excluded from every denominator by the metric scripts.
+                return i, dict(error='malformed judge answer: ' + '; '.join(bad))
             mapped, notes = map_answer(ans, KG[d], ids)
             rec = dict(mapped)
             rec['completion'] = ans.get('completion')

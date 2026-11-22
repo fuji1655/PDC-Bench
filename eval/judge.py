@@ -233,6 +233,24 @@ def map_answer(ans, kg, chain_ids):
     return mapped, notes
 
 
+def check_answer(ans):
+    """Check the judge's JSON answer before mapping; return a list of problems (empty = valid).
+    The three tier keys and "completion" must be present; each tier value must be a string or
+    null, and "completion" must be one of full / partial / refusal. A malformed answer such as
+    {} would otherwise map to "no disclosure" at every tier."""
+    if not isinstance(ans, dict):
+        return ['answer is not a JSON object']
+    errs = []
+    for t in ('certain', 'inferred', 'stereotype'):
+        if t not in ans:
+            errs.append(f'missing key: {t}')
+        elif ans[t] is not None and not isinstance(ans[t], str):
+            errs.append(f'{t} is not a string or null')
+    if ans.get('completion') not in ('full', 'partial', 'refusal'):
+        errs.append('missing or invalid completion')
+    return errs
+
+
 def validate(mapped, chain):
     """Check path membership, tier monotonicity, and the completion label; return errors."""
     errs = []
