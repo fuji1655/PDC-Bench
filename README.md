@@ -33,8 +33,9 @@ and the coverage measure gamma.
   describes the use of the attribute that the task is designed to elicit.
 - `judge/judge_prompt_reference.md` — the judge prompt, all six in-context exemplars,
   the per-domain vocabulary instructions, and the factual-synonym table, reproduced verbatim.
-- `annotation/annotation_guideline_en.md` — the written guideline given to the eight human
-  annotators of the judge-validation study (English translation of the Japanese original).
+- `annotation/annotation_guideline_ja.md` — the written guideline given to the eight human
+  annotators of the judge-validation study (Japanese original), and
+  `annotation/annotation_guideline_en.md`, its English translation.
 - `eval/` — code:
   - `run_inference_api.py` (OpenAI / Anthropic models) and `run_inference_vllm.py`
     (open-weight models with vLLM): inference
@@ -44,6 +45,7 @@ and the coverage measure gamma.
     (semantic leakage and string-matching misses, constraint effect, granularity gap and
     tau-kappa cells, task relevance, model families, domains)
   - `aggregate.py`: per-condition counts and the excess-coverage measure (delta gamma)
+- `requirements.txt` — Python dependencies with the versions used for the paper.
 
 ## Certainty criteria
 
@@ -53,7 +55,9 @@ violation rates under `certain` alone and up to `stereotype` are reported in an 
 
 ## Usage
 
-API keys are read from the environment (`OPENAI_API_KEY`, `ANTHROPIC_API_KEY`).
+Python 3.11. Install the API clients with `pip install -r requirements.txt`; vLLM is needed only
+for open-weight inference (see `requirements.txt`). The metric scripts use only the standard
+library. API keys are read from the environment (`OPENAI_API_KEY`, `ANTHROPIC_API_KEY`).
 All results are written under `results/`.
 
 ### 1. Inference
@@ -80,7 +84,10 @@ Each output is judged by the two judges independently (GPT-4o and Claude Sonnet 
     python eval/run_grounding.py --judge claude-sonnet-5 --model gpt4o --domain all
 
 Results go to `results/grounding/<judge>/<domain>/<model>.json`. Use `--limit 5` to try a few
-samples first.
+samples first. Failed judge calls are stored as `{"error": ...}` and retried once at the end of
+a run; re-running the same command fills in any that remain. The metric scripts exclude such
+records from every denominator and print their number, so re-run grounding until none are left
+before reporting rates (in the paper's runs, none were left).
 
 ### 3. Metrics
 
@@ -92,6 +99,9 @@ unnecessary-exposure rates of the main results tables, inferred criterion) and
 `results/analysis_<judge>_<criterion>.json` (the remaining analyses). `aggregate.py` writes
 `results/aggregate_<judge>.json` with per-condition counts and delta gamma; its rates use
 all constrained samples as the denominator and are not the rates reported in the main tables.
+The scripts also run on a subset of domains or models; rates with no samples (e.g., the
+discrimination-sensitive rate when only the geography domain is present) are reported as
+`null` in the JSON and `n/a` in the printout.
 
 ## Licenses
 

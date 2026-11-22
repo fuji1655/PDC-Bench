@@ -152,6 +152,9 @@ def rouge_detect(d, s, text, thresh=0.5):
 
 
 # ---------- loading ----------
+JUDGE_ERRORS = {}  # (judge, domain, model) -> number of failed judge calls
+
+
 def load_all(judge, tier):
     """tier: 'certain' or 'inferred'."""
     data = {}
@@ -161,9 +164,15 @@ def load_all(judge, tier):
             if not p.exists():
                 continue
             rows = []
+            n_err = 0
             for rid, rec in json.load(open(p)).items():
                 tt, s, cid = META[(d, rid)]
                 if (d, m, rid) in EXCLUDE or s in CALIBRATION_ONLY_NODES:
+                    continue
+                if 'error' in rec:
+                    # A failed judge call is missing data, not "no disclosure": it is left out
+                    # of every denominator and counted. Re-run run_grounding.py to fill it in.
+                    n_err += 1
                     continue
                 ti, ki = tau_idx(d, cid), lvl_idx(d, s)
                 jl = judge_idx(d, rec.get(f'{tier}_node'), s)
@@ -175,6 +184,10 @@ def load_all(judge, tier):
                                  leak=viol and jl == ki, sem=viol and jl < ki,
                                  comp=rec.get('completion')))
             data[(d, m)] = rows
+            if n_err and (judge, d, m) not in JUDGE_ERRORS:
+                JUDGE_ERRORS[(judge, d, m)] = n_err
+                print(f'  !! {judge}/{d}/{m}: {n_err} judge errors excluded '
+                      f'(re-run run_grounding.py to fill them in)')
     return data
 
 
@@ -415,6 +428,7 @@ def model_table(judge, save=True):
     OUT = {}
     print(f'== main tables  judge={judge}  (inferred criterion, %)')
     print(f'{"model":14s} {"viol":>6s} {"sem":>6s} {"leak":>6s} {"UE_irr":>7s} {"UE_CN":>7s} {"UE_disc":>7s}')
+    fmt = lambda v, w: f'{v:{w}.1f}' if v is not None else f'{"n/a":>{w}s}'
     for m, p in per.items():
         if not p['vn']:
             continue
@@ -424,8 +438,13 @@ def model_table(judge, save=True):
                    ue_discrimination=pct(p['UEDS'], p['ds_n']),
                    violation_certain=pct(p['Vc'], p['vn']), counts=p)
         OUT[m] = row
-        print(f'{m:14s} {row["violation"]:6.1f} {row["semantic_leakage"]:6.1f} {row["leakage"]:6.1f} '
-              f'{row["ue_irrelevant"]:7.1f} {row["ue_irrelevant_cn"]:7.1f} {row["ue_discrimination"]:7.1f}')
+        print(f'{m:14s} {fmt(row["violation"], 6)} {fmt(row["semantic_leakage"], 6)} '
+              f'{fmt(row["leakage"], 6)} {fmt(row["ue_irrelevant"], 7)} '
+              f'{fmt(row["ue_irrelevant_cn"], 7)} {fmt(row["ue_discrimination"], 7)}')
+    # Rates with no samples (e.g., discrimination-sensitive tasks when only some domains are
+    # present) are null in the JSON and n/a in the printout.
+    OUT['_judge_errors_excluded'] = {f'{d}/{m}': n for (j, d, m), n in JUDGE_ERRORS.items()
+                                     if j == judge}
     if save:
         outp = B / f'results/main_tables_{judge}.json'
         outp.parent.mkdir(parents=True, exist_ok=True)

@@ -172,9 +172,12 @@ def map_value(val, kg):
 def _to_chain_node(raw, kg, chain_ids):
     """Map one free-text value to a node on the root-to-secret path.
     A path-form value ("Mumbai, India, Asia") is matched component by component and the
-    finest on-path node is taken. An off-path node whose ancestor lies on the path is mapped
-    up to the deepest such ancestor (e.g., 'Pharmacist' when the path ends at a pharmacy
-    role cluster). A purely off-path value (a sibling branch) counts as no disclosure.
+    finest on-path node is taken. A node that is not on the path is lifted to its deepest
+    ancestor on the path: a node below the private node is lifted to the private node (e.g.,
+    'Pharmacist' when the path ends at a pharmacy role cluster), and a node on a sibling branch
+    is lifted to its lowest common ancestor with the private node (e.g., 'Los Angeles' for a
+    private value of San Francisco counts as California, which the reader can still conclude
+    correctly). A value sharing no ancestor with the private node counts as no disclosure.
     Returns (node or None, note or None)."""
     if not raw:
         return None, None

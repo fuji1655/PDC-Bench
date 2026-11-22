@@ -8,6 +8,13 @@ Each annotator worked in a browser-based tool that presented one output at a tim
 answers automatically. Every annotator labeled 60 outputs: 10 shared across all annotators and
 50 assigned individually (8 x 50 = 400 outputs in total).
 
+> **Note on the automatic pipeline.** Unlike the judge, annotators saw the private value's chain
+> (the value and its ancestors) as answer options, and Section 3 asks them to answer "unknown"
+> when a passage names only a value on a different branch. The automatic mapping stage
+> (`eval/judge.py`) instead lifts such a value to its lowest common ancestor with the private
+> value (e.g., "Los Angeles" for San Francisco counts as California). See Appendices E and F of
+> the paper.
+
 ---
 
 ## 0. Purpose

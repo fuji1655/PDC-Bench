@@ -210,6 +210,8 @@ vocabulary: the person's ROLE (what they do), not their subject matter or indust
 }
 ```
 
-The full mapping logic (surface/alias matching, lifting of below-chain nodes,
-off-chain values treated as no disclosure, nested-tier enforcement) is implemented in
+The full mapping logic (surface/alias matching; lifting of an off-chain node to its deepest
+ancestor on the chain, i.e., a node below the private node to the private node and a
+sibling-branch node to the lowest common ancestor; values sharing no ancestor with the private
+node treated as no disclosure; nested-tier enforcement) is implemented in
 `eval/judge.py` (`map_value`, `map_answer`).
