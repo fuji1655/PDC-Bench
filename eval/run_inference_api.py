@@ -17,7 +17,8 @@ Decoding settings:
 
 Output: a JSON list with one record per sample
     {id, model, query_id, secret_node_id, output, query, profile}
-Re-running the same command resumes from the existing output file.
+Re-running the same command resumes from the existing output file and retries only the samples
+that are still missing. At the end the script reports how many dataset samples have no output.
 
 Example:
     python eval/run_inference_api.py \\
@@ -150,6 +151,7 @@ def main():
     def save():
         json.dump(results, open(out_path, "w"), ensure_ascii=False, indent=2)
 
+    failed = []
     for i, s in enumerate(dataset):
         if s["id"] in done:
             continue
@@ -163,10 +165,12 @@ def main():
                       "Re-run the same command to resume.")
                 sys.exit(0)
             print(f"ERROR: {e}")
+            failed.append(s["id"])
             time.sleep(5)
             continue
         except Exception as e:
             print(f"ERROR: {e}")
+            failed.append(s["id"])
             time.sleep(5)
             continue
 
@@ -181,6 +185,11 @@ def main():
 
     save()
     print(f"DONE {len(results)} -> {out_path}")
+    missing = len({s["id"] for s in dataset} - {r["id"] for r in results})
+    if missing:
+        # Missing samples would silently drop out of the metrics; fill them in before grounding.
+        print(f"!! {missing} of {len(dataset)} samples have no output ({len(failed)} failed in "
+              "this run). Re-run the same command to retry them.")
 
 
 if __name__ == "__main__":

@@ -15,8 +15,8 @@ criterion (the paper reports the inferred criterion):
   - Unnecessary Exposure (UE) on tasks that do not need the attribute (non-relevant and
     discrimination-sensitive tasks), overall and under the no-constraint control CN;
     this script counts UE under the certain criterion
-Excluded: the 100 calibration outputs (data/excluded_outputs.json) and three race nodes used
-only as calibration material. CF (explicit full allowance) is aggregated separately.
+Excluded: the 100 calibration outputs (data/excluded_outputs.json) and the three
+candidate-only race-and-ethnicity nodes (228 samples). CF (explicit full allowance) is aggregated separately.
 
 Input : results/grounding/{judge}/{domain}/{model}.json, results/outputs/{domain}/{model}.json
 Output: results/aggregate_{judge}.json and a summary table on stdout
@@ -35,8 +35,10 @@ LEVELS = {'geo': ['continent', 'country', 'state', 'city'],
           'age': ['life_phase', 'decade', 'specific_age'],
           'race': ['heritage', 'ethnic_group', 'ethnicity'],
           'occ': ['sector', 'occ_domain', 'role_cluster', 'job']}
-# Race nodes used only as judge-calibration material; excluded from all metrics.
-CALIBRATION_ONLY_NODES = {'ALASKA_NATIVE', 'MICRONESIAN', 'MIDDLE_EASTERN'}
+# Candidate-only race-and-ethnicity nodes: in the KG as candidate values only, with no samples in
+# any metric (3 nodes x 76 samples = 228, of which 57 are CF).
+CANDIDATE_ONLY_NODES = {'ALASKA_NATIVE', 'MICRONESIAN', 'MIDDLE_EASTERN'}
+# File names of the evaluated models; sonnet4 is Claude Sonnet 4.6 (see README).
 MODELS = ['gpt4o', 'gpt4omini', 'gpt5', 'gpt5mini', 'sonnet4', 'sonnet5',
           'llama_8b', 'llama_70b', 'llama4_scout', 'qwen3_14b', 'qwen3_32b']
 TIERS = ('certain', 'inferred')
@@ -143,11 +145,19 @@ def main():
                 continue
             preds = json.load(open(gp))
             raws = {x['id']: x for x in json.load(open(B / f'results/outputs/{d}/{m}.json'))}
+            # Dataset samples with no inference output or no grounding record would silently
+            # drop out of every denominator; report them.
+            expected = {x['id'] for x in json.load(open(B / f'data/dataset_{d}.json'))
+                        if x['secret_attribute']['node_id'] not in CANDIDATE_ONLY_NODES
+                        and (d, m, x['id']) not in EXCLUDE}
+            n_miss = len(expected - (set(preds) & set(raws)))
+            if n_miss:
+                print(f'  !! {m}/{d}: {n_miss} dataset samples have no output or grounding record')
             for i, rec in preds.items():
                 if i not in raws or (d, m, i) in EXCLUDE:
                     continue
                 s_node = raws[i]['secret_node_id']
-                if d == 'race' and s_node in CALIBRATION_ONLY_NODES:
+                if d == 'race' and s_node in CANDIDATE_ONLY_NODES:
                     continue
                 if 'error' in rec:
                     agg[(m, d, 'ERR')]['err'] += 1

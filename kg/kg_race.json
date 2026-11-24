@@ -28,7 +28,9 @@
  "HAN_CHINESE": {
   "surface": "Han Chinese",
   "level": "ethnicity",
-  "aliases": [],
+  "aliases": [
+   "Chinese"
+  ],
   "ancestors": [
    "EAST_ASIAN",
    "ASIAN"
@@ -73,7 +75,9 @@
  "CHINESE_AMERICAN": {
   "surface": "Chinese-American",
   "level": "ethnicity",
-  "aliases": [],
+  "aliases": [
+   "Chinese American"
+  ],
   "ancestors": [
    "EAST_ASIAN",
    "ASIAN"
@@ -88,7 +92,9 @@
  "KOREAN_AMERICAN": {
   "surface": "Korean-American",
   "level": "ethnicity",
-  "aliases": [],
+  "aliases": [
+   "Korean American"
+  ],
   "ancestors": [
    "EAST_ASIAN",
    "ASIAN"
@@ -127,7 +133,10 @@
  "PAKISTANI_BANGLADESHI": {
   "surface": "Pakistani/Bangladeshi",
   "level": "ethnicity",
-  "aliases": [],
+  "aliases": [
+   "Pakistani",
+   "Bangladeshi"
+  ],
   "ancestors": [
    "SOUTH_ASIAN",
    "ASIAN"
@@ -193,7 +202,10 @@
  "INDONESIAN_MALAY": {
   "surface": "Indonesian/Malay",
   "level": "ethnicity",
-  "aliases": [],
+  "aliases": [
+   "Indonesian",
+   "Malay"
+  ],
   "ancestors": [
    "SOUTHEAST_ASIAN",
    "ASIAN"
@@ -207,7 +219,10 @@
  "BLACK_OR_AFRICAN_AMERICAN": {
   "surface": "Black or African American",
   "level": "heritage",
-  "aliases": [],
+  "aliases": [
+   "Black",
+   "African American"
+  ],
   "ancestors": [],
   "siblings": [
    "ASIAN",
@@ -244,7 +259,9 @@
  "KENYAN": {
   "surface": "Kenyan",
   "level": "ethnicity",
-  "aliases": [],
+  "aliases": [
+   "Kikuyu"
+  ],
   "ancestors": [
    "EAST_AFRICAN",
    "BLACK_OR_AFRICAN_AMERICAN"
@@ -267,7 +284,10 @@
  "NIGERIAN": {
   "surface": "Nigerian",
   "level": "ethnicity",
-  "aliases": [],
+  "aliases": [
+   "Yoruba",
+   "Igbo"
+  ],
   "ancestors": [
    "WEST_AFRICAN",
    "BLACK_OR_AFRICAN_AMERICAN"
@@ -279,7 +299,9 @@
  "GHANAIAN": {
   "surface": "Ghanaian",
   "level": "ethnicity",
-  "aliases": [],
+  "aliases": [
+   "Akan"
+  ],
   "ancestors": [
    "WEST_AFRICAN",
    "BLACK_OR_AFRICAN_AMERICAN"
@@ -291,7 +313,9 @@
  "WHITE": {
   "surface": "White",
   "level": "heritage",
-  "aliases": [],
+  "aliases": [
+   "Caucasian"
+  ],
   "ancestors": [],
   "siblings": [
    "ASIAN",
@@ -389,7 +413,10 @@
  "BRITISH_IRISH": {
   "surface": "British/Irish",
   "level": "ethnicity",
-  "aliases": [],
+  "aliases": [
+   "British",
+   "Irish"
+  ],
   "ancestors": [
    "NORTHERN_EUROPEAN",
    "WHITE"
@@ -401,7 +428,11 @@
  "SCANDINAVIAN": {
   "surface": "Scandinavian",
   "level": "ethnicity",
-  "aliases": [],
+  "aliases": [
+   "Norwegian",
+   "Swedish",
+   "Danish"
+  ],
   "ancestors": [
    "NORTHERN_EUROPEAN",
    "WHITE"
@@ -456,7 +487,10 @@
  "CENTRAL_AMERICAN": {
   "surface": "Central American",
   "level": "ethnicity",
-  "aliases": [],
+  "aliases": [
+   "Costa Rican",
+   "Guatemalan"
+  ],
   "ancestors": [
    "MEXICAN_CENTRAL_AMERICAN",
    "HISPANIC_OR_LATINO"
@@ -479,7 +513,10 @@
  "COLOMBIAN_VENEZUELAN": {
   "surface": "Colombian/Venezuelan",
   "level": "ethnicity",
-  "aliases": [],
+  "aliases": [
+   "Colombian",
+   "Venezuelan"
+  ],
   "ancestors": [
    "SOUTH_AMERICAN",
    "HISPANIC_OR_LATINO"
@@ -589,7 +626,9 @@
  "LATIN_AMERICAN_INDIGENOUS": {
   "surface": "Latin American Indigenous",
   "level": "ethnicity",
-  "aliases": [],
+  "aliases": [
+   "Quechua"
+  ],
   "ancestors": [
    "INDIGENOUS",
    "AMERICAN_INDIAN_OR_ALASKA_NATIVE"

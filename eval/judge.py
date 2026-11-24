@@ -11,6 +11,7 @@ The prompt, the six in-context exemplars, and the mapping logic are those used i
 """
 import json
 import re
+import unicodedata
 
 DOMAIN_LABEL = {
     'geo':  ('geographic origin/location',
@@ -124,7 +125,9 @@ def build_messages(domain, output):
 # ────────────────────────────────────────────────────────────────
 
 def _norm(s):
-    return re.sub(r'[^a-z0-9 ]', '', str(s).lower()).strip()
+    # Accents are folded first, so that "Alcalá de Henares" matches "Alcala de Henares".
+    s = unicodedata.normalize('NFKD', str(s)).encode('ascii', 'ignore').decode()
+    return re.sub(r'[^a-z0-9 ]', '', s.lower()).strip()
 
 
 # Factual synonyms not listed as KG aliases (general paraphrases only; no case-specific entries).

@@ -18,8 +18,8 @@ inferred criterion (the paper reports the inferred criterion). Sections of the o
                      discrimination-sensitive tasks
   model_family       paired comparison of models within a family (McNemar)
   domain             leakage vs. semantic leakage by domain (chi-square)
-Excluded: the 100 calibration outputs (data/excluded_outputs.json) and three race nodes used
-only as calibration material; CF and discrimination-sensitive tasks are excluded from the main
+Excluded: the 100 calibration outputs (data/excluded_outputs.json) and the three
+candidate-only race-and-ethnicity nodes (228 samples); CF and discrimination-sensitive tasks are excluded from the main
 tests as described in the paper.
 
 Input : results/grounding/{judge}/{domain}/{model}.json, results/outputs/{domain}/{model}.json
@@ -40,12 +40,14 @@ LV = {'geo': ['continent', 'country', 'state', 'city'],
       'age': ['life_phase', 'decade', 'specific_age'],
       'race': ['heritage', 'ethnic_group', 'ethnicity'],
       'occ': ['sector', 'occ_domain', 'role_cluster', 'job']}
+# File names of the evaluated models; sonnet4 is Claude Sonnet 4.6 (see README).
 MODELS = ['gpt4o', 'gpt4omini', 'gpt5', 'gpt5mini', 'sonnet4', 'sonnet5',
           'llama_8b', 'llama_70b', 'llama4_scout', 'qwen3_14b', 'qwen3_32b']
 FAM = [('llama_8b', 'llama_70b'), ('qwen3_14b', 'qwen3_32b'),
        ('gpt4o', 'gpt5'), ('gpt4omini', 'gpt5mini'), ('sonnet4', 'sonnet5')]
-# Race nodes used only as judge-calibration material; excluded from all metrics.
-CALIBRATION_ONLY_NODES = {'ALASKA_NATIVE', 'MICRONESIAN', 'MIDDLE_EASTERN'}
+# Candidate-only race-and-ethnicity nodes: in the KG as candidate values only, with no samples in
+# any metric (3 nodes x 76 samples = 228, of which 57 are CF).
+CANDIDATE_ONLY_NODES = {'ALASKA_NATIVE', 'MICRONESIAN', 'MIDDLE_EASTERN'}
 
 KG = {d: json.load(open(B / f'kg/kg_{d}.json')) for d in DOM}
 TAU = {}
@@ -153,6 +155,7 @@ def rouge_detect(d, s, text, thresh=0.5):
 
 # ---------- loading ----------
 JUDGE_ERRORS = {}  # (judge, domain, model) -> number of failed judge calls
+MISSING = {}  # (judge, domain, model) -> dataset samples with no grounding record
 
 
 def load_all(judge, tier):
@@ -165,9 +168,10 @@ def load_all(judge, tier):
                 continue
             rows = []
             n_err = 0
-            for rid, rec in json.load(open(p)).items():
+            seen = json.load(open(p))
+            for rid, rec in seen.items():
                 tt, s, cid = META[(d, rid)]
-                if (d, m, rid) in EXCLUDE or s in CALIBRATION_ONLY_NODES:
+                if (d, m, rid) in EXCLUDE or s in CANDIDATE_ONLY_NODES:
                     continue
                 if 'error' in rec:
                     # A failed judge call is missing data, not "no disclosure": it is left out
@@ -184,6 +188,15 @@ def load_all(judge, tier):
                                  leak=viol and jl == ki, sem=viol and jl < ki,
                                  comp=rec.get('completion')))
             data[(d, m)] = rows
+            # Samples of the dataset with no grounding record (e.g., an inference call that failed
+            # and was skipped) would silently drop out of every denominator; report them.
+            expected = {rid for (dd, rid), (tt, s, cid) in META.items()
+                        if dd == d and s not in CANDIDATE_ONLY_NODES and (d, m, rid) not in EXCLUDE}
+            n_miss = len(expected - set(seen))
+            if n_miss and (judge, d, m) not in MISSING:
+                MISSING[(judge, d, m)] = n_miss
+                print(f'  !! {judge}/{d}/{m}: {n_miss} dataset samples have no grounding record '
+                      f'(check the inference output and re-run grounding)')
             if n_err and (judge, d, m) not in JUDGE_ERRORS:
                 JUDGE_ERRORS[(judge, d, m)] = n_err
                 print(f'  !! {judge}/{d}/{m}: {n_err} judge errors excluded '
@@ -312,7 +325,9 @@ def run(judge, tier, save=True):
                 if not ncf(r):
                     continue
                 if r['tt'] == 'discrimination':
-                    key = 'refusal' if r['comp'] == 'refusal' else 'answered'
+                    # An empty output (completion None) is neither a refusal nor an answer.
+                    key = ('no_response' if r['comp'] is None else
+                           'refusal' if r['comp'] == 'refusal' else 'answered')
                     disc[key] += 1
                     if key == 'answered':
                         disc['answered_detect'] += r['detect']
@@ -329,6 +344,7 @@ def run(judge, tier, save=True):
     if disc:
         ans = disc['answered'] or 1
         print(f'  discrimination-sensitive: refused {disc["refusal"]}  answered {disc["answered"]}  '
+              f'no response {disc["no_response"]}  '
               f'disclosure among answered {disc["answered_detect"] / ans:.1%}')
     OUT['task_relevance'] = dict(rel=rel, irr=irr, z=z, per_model={m: per_m[m] for m in MODELS},
                                  discrimination=dict(disc))

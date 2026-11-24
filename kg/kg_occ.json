@@ -28,7 +28,9 @@
  "SOFTWARE_ENGINEER": {
   "surface": "Software Engineer",
   "level": "job",
-  "aliases": [],
+  "aliases": [
+   "Software Developer"
+  ],
   "ancestors": [
    "APPLICATION_DEVELOPMENT_CLUSTER",
    "SOFTWARE_ENGINEERING_DOMAIN",
@@ -91,7 +93,9 @@
  "DATA_ANALYTICS_CLUSTER": {
   "surface": "Data Analytics",
   "level": "role_cluster",
-  "aliases": [],
+  "aliases": [
+   "Data Analysis"
+  ],
   "ancestors": [
    "DATA_SCIENCE_DOMAIN",
    "TECHNOLOGY_SECTOR"
@@ -235,7 +239,11 @@
  "PHYSICIANS_AND_SURGEONS_DOMAIN": {
   "surface": "Physicians and Surgeons",
   "level": "occ_domain",
-  "aliases": [],
+  "aliases": [
+   "Physician",
+   "Doctor",
+   "Clinical Medicine"
+  ],
   "ancestors": [
    "HEALTHCARE_SECTOR"
   ],
@@ -308,7 +316,9 @@
  "NURSING_DOMAIN": {
   "surface": "Nursing",
   "level": "occ_domain",
-  "aliases": [],
+  "aliases": [
+   "Nurse"
+  ],
   "ancestors": [
    "HEALTHCARE_SECTOR"
   ],
@@ -400,7 +410,9 @@
  "PHYSICAL_THERAPIST": {
   "surface": "Physical Therapist",
   "level": "job",
-  "aliases": [],
+  "aliases": [
+   "Physical Therapy"
+  ],
   "ancestors": [
    "REHABILITATION_THERAPY_CLUSTER",
    "ALLIED_HEALTH_DOMAIN",
@@ -411,7 +423,9 @@
  "OCCUPATIONAL_THERAPIST": {
   "surface": "Occupational Therapist",
   "level": "job",
-  "aliases": [],
+  "aliases": [
+   "Occupational Therapy"
+  ],
   "ancestors": [
    "REHABILITATION_THERAPY_CLUSTER",
    "ALLIED_HEALTH_DOMAIN",
@@ -534,7 +548,9 @@
  "SCHOOL_EDUCATION_DOMAIN": {
   "surface": "School Education",
   "level": "occ_domain",
-  "aliases": [],
+  "aliases": [
+   "Teacher"
+  ],
   "ancestors": [
    "EDUCATION_SECTOR"
   ],
@@ -614,7 +630,9 @@
  "FINANCE_DOMAIN": {
   "surface": "Finance",
   "level": "occ_domain",
-  "aliases": [],
+  "aliases": [
+   "Financial Analyst"
+  ],
   "ancestors": [
    "BUSINESS_SECTOR"
   ],
@@ -676,7 +694,9 @@
  "AUDITOR": {
   "surface": "Auditor",
   "level": "job",
-  "aliases": [],
+  "aliases": [
+   "Auditing"
+  ],
   "ancestors": [
    "ACCOUNTING_CLUSTER",
    "FINANCE_DOMAIN",
@@ -728,7 +748,9 @@
  "HUMAN_RESOURCES_CLUSTER": {
   "surface": "Human Resources",
   "level": "role_cluster",
-  "aliases": [],
+  "aliases": [
+   "Recruitment"
+  ],
   "ancestors": [
    "MANAGEMENT_DOMAIN",
    "BUSINESS_SECTOR"

@@ -11,15 +11,21 @@ and the coverage measure gamma.
 ## Contents
 
 - `kg/` — knowledge graphs for the four domains (`kg_geo.json` 128 / `kg_age.json` 60 /
-  `kg_race.json` 54 / `kg_occ.json` 81 nodes; 323 total). `occ_base_map.json` merges
+  `kg_race.json` 54 / `kg_occ.json` 81 nodes; 323 total). The `aliases` of each node are used
+  when judge answers are mapped to nodes (accents are ignored in matching). Aliases for common
+  abbreviations, sub-groups, and generic job titles (e.g., "USA", "Irish", "Teacher") were added
+  after the paper's experiments, so grounding with this version can map some answers that the
+  paper's runs left unmapped. `occ_base_map.json` merges
   near-duplicate occupation leaves (44 -> 37); it is used for a robustness check of the
   coverage measure gamma against the choice of occupation leaf set.
 - `data/dataset_{geo,age,race,occ}.json` — benchmark samples, each a triple of
   profile x task x constraint: geography 6,900, age 4,592, race and ethnicity 4,560,
   occupation 4,300, for 20,352 entries per evaluated model. Of these, **16,105 are the main
   samples reported in the paper**; the remaining 4,247 are the explicit full-allowance
-  condition CF (4,019, analyzed only in the CN-vs-CF appendix) and candidate-only
-  race-and-ethnicity nodes (228, excluded from all metrics). All profiles are fully
+  condition CF (4,019, analyzed only in the CN-vs-CF appendix) and the samples of the three
+  candidate-only race-and-ethnicity nodes `ALASKA_NATIVE`, `MICRONESIAN`, and `MIDDLE_EASTERN`
+  (3 x 76 = 228, excluded from all metrics). These nodes are in the KG as candidate values
+  only. The files contain 4,076 CF samples; the 4,019 excludes the 57 CF samples of these nodes. All profiles are fully
   synthetic and describe no real individual.
   Sample ids have the form `<node>_<condition>_<task>` (e.g., `SAN_FRANCISCO_C3_T1`).
 - `data/excluded_outputs.json` — the 100 (model, sample) outputs used for judge
@@ -73,8 +79,25 @@ constraint text followed by the task as the user message. Save the outputs as
 
 Decoding settings are documented at the top of each script. The paper served open-weight
 models with vLLM 0.24.0. The aggregation scripts look for
-the file names used in the paper: `gpt4o`, `gpt4omini`, `gpt5`, `gpt5mini`, `sonnet4`,
-`sonnet5`, `llama_8b`, `llama_70b`, `llama4_scout`, `qwen3_14b`, `qwen3_32b`.
+the file names used in the paper's runs:
+
+| File name | Model in the paper | Model id / checkpoint |
+|---|---|---|
+| `gpt4o` | GPT-4o | `gpt-4o` |
+| `gpt4omini` | GPT-4o-mini | `gpt-4o-mini` |
+| `gpt5` | GPT-5 | `gpt-5` |
+| `gpt5mini` | GPT-5-mini | `gpt-5-mini` |
+| `sonnet4` | Claude Sonnet 4.6 | `claude-sonnet-4-6` |
+| `sonnet5` | Claude Sonnet 5 | `claude-sonnet-5` |
+| `llama_8b` | Llama-3.1-8B | `meta-llama/Llama-3.1-8B-Instruct` |
+| `llama_70b` | Llama-3.1-70B | `meta-llama/Llama-3.1-70B-Instruct` |
+| `llama4_scout` | Llama-4-Scout | `meta-llama/Llama-4-Scout-17B-16E-Instruct` |
+| `qwen3_14b` | Qwen3-14B | `Qwen/Qwen3-14B` |
+| `qwen3_32b` | Qwen3-32B | `Qwen/Qwen3-32B` |
+
+`run_inference_api.py` reports at the end how many dataset samples have no output; re-run the
+same command until none are left, since the metric scripts can only report, not fill in,
+missing samples.
 
 ### 2. Grounding
 
@@ -88,7 +111,11 @@ samples first. Failed judge calls, and answers that lack a required key or have 
 (`check_answer` in `eval/judge.py`), are stored as `{"error": ...}` and retried once at the end
 of a run; re-running the same command fills in any that remain. The metric scripts exclude such
 records from every denominator and print their number, so re-run grounding until none are left
-before reporting rates (in the paper's runs, none were left).
+before reporting rates (in the paper's runs, none were left). Both metric scripts also print
+the number of dataset samples that have no grounding record. An empty model output is
+recorded without a judge call (`completion` null, `note: "empty_output"`) and counts as no
+disclosure; on discrimination-sensitive tasks it is counted as "no response", separately
+from refusals and answers.
 
 ### 3. Metrics
 

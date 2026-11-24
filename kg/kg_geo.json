@@ -12,7 +12,13 @@
  "UNITED_STATES": {
   "surface": "United States",
   "level": "country",
-  "aliases": [],
+  "aliases": [
+   "USA",
+   "US",
+   "U.S.",
+   "U.S.A.",
+   "United States of America"
+  ],
   "ancestors": [
    "NORTH_AMERICA"
   ],
@@ -86,7 +92,9 @@
  "NEW_YORK_CITY": {
   "surface": "New York City",
   "level": "city",
-  "aliases": [],
+  "aliases": [
+   "NYC"
+  ],
   "ancestors": [
    "NEW_YORK",
    "UNITED_STATES",
