@@ -16,7 +16,9 @@
  "EAST_ASIAN": {
   "surface": "East Asian",
   "level": "ethnic_group",
-  "aliases": [],
+  "aliases": [
+   "Chinese"
+  ],
   "ancestors": [
    "ASIAN"
   ],
@@ -28,9 +30,7 @@
  "HAN_CHINESE": {
   "surface": "Han Chinese",
   "level": "ethnicity",
-  "aliases": [
-   "Chinese"
-  ],
+  "aliases": [],
   "ancestors": [
    "EAST_ASIAN",
    "ASIAN"
