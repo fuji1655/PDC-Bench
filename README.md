@@ -1,6 +1,6 @@
 # PDC-Bench
 
-Code and data for *PDC-Bench* (Findings of EACL 2027).
+Code and data for *PDC-Bench* (Findings of EACL 2027). Paper: [arXiv:2611.32610](https://arxiv.org/abs/2611.32610)
 Authors: Kosuke Fujita, Daiki Nishiyama, Jun Sakuma (Institute of Science Tokyo, RIKEN).
 
 Benchmark for evaluating how faithfully LLMs keep a semantic privacy constraint on the
@@ -137,3 +137,18 @@ Code is released under the MIT License and the data (knowledge graphs, profiles,
 constraints) under CC BY 4.0; see `LICENSE`. The knowledge graphs contain only node
 names, level labels, and the containment relations we defined; how each hierarchy was
 built is documented in the appendix of the paper.
+
+## Citation
+
+```bibtex
+@misc{fujita2026pdcbench,
+  title         = {Privacy Disclosure Control Benchmark ({PDC-Bench}): How Faithfully Do {LLMs} Keep Privacy Constraints on In-Context Disclosure Granularity?},
+  author        = {Fujita, Kosuke and Nishiyama, Daiki and Sakuma, Jun},
+  year          = {2026},
+  eprint        = {2611.32610},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2611.32610},
+  note          = {Accepted to Findings of EACL 2027}
+}
+```
